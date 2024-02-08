@@ -52,12 +52,6 @@ class ProductCatalogViewController: UIViewController {
     ObjectCollectionHelper.setupCollectionView(
       productCellID,
       for: productCatalogCollectionView, in: self)
-      
-      let c = CategoryPageView(CategoryId: "013434", CategoryName: "Habits", tags: [])
-      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentViewController: self, category : c, success: { (responseBeyableSendView) in
-      }) { (error) in
-          
-      }
 
   }
   

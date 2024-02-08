@@ -48,10 +48,12 @@ class ProductOverviewViewController: UIViewController {
       productCollectionCellID,
       for: productCollectionsList, in: self)
       
-      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentViewController: self, tags : ["Home" , "Je suis dans la home"], success: { (responseBeyableSendView) in
+      let c = CategoryPageView(CategoryId: "013434", CategoryName: "Habits", tags: [])
+      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentViewController: self, category : c, success: { (responseBeyableSendView) in
       }) { (error) in
           
       }
+    
   }
   
   

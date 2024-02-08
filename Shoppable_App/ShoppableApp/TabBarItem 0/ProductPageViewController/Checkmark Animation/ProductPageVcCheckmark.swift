@@ -19,29 +19,6 @@ extension ProductPageViewController {
    as feedback to the user
    */
   
-  // MARK: - Setup the Checkmark animation
-
-  func setupCheckmarkAnimation() {
-    checkmark = CheckmarkView()
-    let checkmarkHeight = addToCartButton.frame.height-4
-    let checkMarkRect = CGRect(
-      x: 0, y: 0,
-      width: checkmarkHeight, height: checkmarkHeight)
-    
-    checkmark.setupAnimation(
-      frame: checkMarkRect,
-      animatedLayerColor: .white,
-      strokeWidth: 4,
-      animated: true
-    )
-    
-    // Add the checkmark to its container view
-    checkmarkBGView.addSubview(self.checkmark)
-    
-    setupCheckmarkDependentUI()
-    animateCheckmark()
-  }
-  
   
   // MARK: - Prepare AddToCart button
   

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A385172B738A3600A90F21 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A385162B738A3600A90F21 /* RootViewController.swift */; };
+		52A385192B7441E700A90F21 /* beyable_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A385182B7441E700A90F21 /* beyable_icon.png */; };
 		52D9135E2B72874A009BB13F /* BeyableClient in Frameworks */ = {isa = PBXBuildFile; productRef = 52D9135D2B72874A009BB13F /* BeyableClient */; };
 		5E2D0BF82993DC8C00DCB967 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D0BF72993DC8C00DCB967 /* CoreDataServiceTests.swift */; };
 		5E2D0BFB2994021900DCB967 /* ProductAttributedStringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2D0BFA2994021900DCB967 /* ProductAttributedStringHelper.swift */; };
@@ -89,6 +91,8 @@
 		52A385132B72B89700A90F21 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		52A385142B72B89700A90F21 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		52A385152B72B89700A90F21 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		52A385162B738A3600A90F21 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		52A385182B7441E700A90F21 /* beyable_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beyable_icon.png; sourceTree = "<group>"; };
 		52D913522B72824E009BB13F /* BeyableClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BeyableClient; path = ../../BeyableClient; sourceTree = "<group>"; };
 		5E2D0BEE2993DC4F00DCB967 /* ShoppableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2D0BF72993DC8C00DCB967 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
@@ -469,7 +473,9 @@
 				5E85F0FC2979BE5200252728 /* Main.storyboard */,
 				5E85F1012979BE5300252728 /* LaunchScreen.storyboard */,
 				5E85F0FF2979BE5300252728 /* Assets.xcassets */,
+				52A385182B7441E700A90F21 /* beyable_icon.png */,
 				5E85F1042979BE5300252728 /* Info.plist */,
+				52A385162B738A3600A90F21 /* RootViewController.swift */,
 			);
 			path = ShoppableApp;
 			sourceTree = "<group>";
@@ -632,6 +638,7 @@
 				5E85F1202979CD2600252728 /* ProductCatalogCell.xib in Resources */,
 				5E85F10B2979BE6700252728 /* products.json in Resources */,
 				5E85F11A2979C53600252728 /* ProductCollectionCell.xib in Resources */,
+				52A385192B7441E700A90F21 /* beyable_icon.png in Resources */,
 				5E85F1002979BE5300252728 /* Assets.xcassets in Resources */,
 				5E85F0FE2979BE5200252728 /* Main.storyboard in Resources */,
 				5E85F12A2979EC0900252728 /* CartProductCell.xib in Resources */,
@@ -692,6 +699,7 @@
 				5E3ACD962996553D009D45C6 /* CartVcObservers.swift in Sources */,
 				5ED78EE1297EC7A300353473 /* ProductInfoHelper.swift in Sources */,
 				5E7116DD298BCF24007DB865 /* ColorExtensions.swift in Sources */,
+				52A385172B738A3600A90F21 /* RootViewController.swift in Sources */,
 				5E2D0BFD299402E200DCB967 /* CollectionProductInfoHelper.swift in Sources */,
 				5E85F11C2979C79E00252728 /* ProductCatalogViewController.swift in Sources */,
 				5E3ACDC529967D00009D45C6 /* ProductOverviewVcCollectionLayout.swift in Sources */,

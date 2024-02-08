@@ -10,7 +10,7 @@
 
 import UIKit
 
-
+import BeyableClient
 class ProductPageViewController: UIViewController {
 
   
@@ -48,7 +48,9 @@ class ProductPageViewController: UIViewController {
   var checkmark: CheckmarkView!
   
   
-  // MARK: - View Controller's Life Cycle 
+  @IBOutlet weak var inPageView: UIView!
+    
+  // MARK: - View Controller's Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -70,6 +72,10 @@ class ProductPageViewController: UIViewController {
     // Load Product Info
     loadImage()
     setupProductInfoLabels()
+      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.PRODUCT, currentViewController: self, viewInPage : inPageView, success: { (responseBeyableSendView) in
+      }) { (error) in
+          
+      }
     
   }
   
@@ -84,13 +90,6 @@ class ProductPageViewController: UIViewController {
      */
     productPageViewControllerDelegate?
       .didTapAddToCartButtonFromProductPage(for: productObject!)
-    
-    /*
-     Show a blurred background view while the Checkmark animation
-     plays on the 'Add To Cart' button
-     */
-    blurView.showAnimatedAsBlur(withDuration: 0.2, delay: 0)
-    setupCheckmarkAnimation()
   }
   
 }
