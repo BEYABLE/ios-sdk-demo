@@ -186,7 +186,6 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="clickEnter" destination="XKg-M2-4XV" eventType="touchUpInside" id="hyg-6M-q7s"/>
                                             <action selector="clickVisitor" destination="XKg-M2-4XV" eventType="touchUpInside" id="3vk-va-48w"/>
                                         </connections>
                                     </button>
