@@ -1,0 +1,53 @@
+/*
+  Localizable.strings
+  
+
+ Created by Brahim Ouamassi
+  
+*/
+
+
+// TabBarController
+"Collections" = "Catégorie";
+"Cart" = "Panier";
+
+
+// ProductOverviewViewController
+"Couches" = "Sofas";
+"Chairs" = "Chaises";
+
+
+// ProductCatalogViewController
+"seats" = "Places";
+
+
+// ProductPageViewController
+"Add to Shopping Cart" = "Ajouter au panier";
+"Product" = "Produits";
+
+
+// CartViewController
+"Shopping Cart" = "Paniers";
+"Remove Item" = "Supprimer Produit";
+
+
+// Buttons
+"Done" = "Valider";
+"Cancel" = "Annuler";
+
+
+// Colors
+"beige" = "Belge";
+"gray" = "Gris";
+"black" = "Noir";
+"multi" = "Multicolor";
+"flanell" = "flanell";
+"white" = "Blanc";
+"dark blue" = "dark blue";
+"wood" = "wood";
+
+
+// Materials
+"wood with cover" = "wood with cover";
+"plastic" = "plastic";
+"wood and metal" = "wood and metal";
