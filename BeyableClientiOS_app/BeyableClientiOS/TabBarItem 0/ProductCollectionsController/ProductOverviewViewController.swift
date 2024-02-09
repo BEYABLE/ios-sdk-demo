@@ -47,9 +47,13 @@ class ProductOverviewViewController: UIViewController {
     ObjectCollectionHelper.setupCollectionView(
       productCollectionCellID,
       for: productCollectionsList, in: self)
+    
       
-      let c = CategoryPageView(CategoryId: "013434", CategoryName: "Habits", tags: [:])
-      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentViewController: self, category : c)
+      let homePage = BYHomeAttributes(tags: ["screenTitle":"\(self.screenTitle)", "numberCategory":"\(self.productCollections.count)"])
+      
+      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentViewController: self, attributes: homePage)
+
+      
     
   }
   

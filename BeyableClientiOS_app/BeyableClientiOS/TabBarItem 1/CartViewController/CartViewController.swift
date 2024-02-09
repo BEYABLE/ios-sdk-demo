@@ -88,8 +88,10 @@ class CartViewController: UIViewController {
         }
         let totalPriceAmount = coreDataService
             .getShoppingCartTotalAmount()
-        if(totalPriceAmount > 0){
-            AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentViewController: self, cart: nil)
+        
+        if(totalPriceAmount > 0 || shoppingCartProducts.count > 0){
+            let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
+            AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentViewController: self, attributes: byCartInfos)
         }
     }
     
@@ -266,6 +268,19 @@ extension CartViewController {
     
 }
 
+
+extension CartViewController {
+    func getCartByInfos(shoppingCartProducts : [ShoppingCartProduct]) -> BYCartInfos{
+        var items = [BYCartItemInfos]()
+        for cartProduit in shoppingCartProducts {
+            
+            items.append(BYCartItemInfos(productReference: cartProduit.id, productName: cartProduit.name, productUrl: cartProduit.imgUrl, productPrice: cartProduit.price, quantity: 1, thumbnailUrl: "", tags: [:]))
+        }
+        
+        return BYCartInfos(items: items)
+        
+    }
+}
 
 
 
