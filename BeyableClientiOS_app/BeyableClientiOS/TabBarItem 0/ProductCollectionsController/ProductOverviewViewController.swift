@@ -51,10 +51,8 @@ class ProductOverviewViewController: UIViewController {
       
       let homePage = BYHomeAttributes(tags: ["screenTitle":"\(self.screenTitle)", "numberCategory":"\(self.productCollections.count)"])
       
-      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentViewController: self, attributes: homePage)
-
-      
-    
+      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentView: self.view, attributes: homePage)
+        
   }
   
   

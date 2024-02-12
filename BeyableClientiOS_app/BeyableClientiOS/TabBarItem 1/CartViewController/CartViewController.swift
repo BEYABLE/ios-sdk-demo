@@ -91,7 +91,7 @@ class CartViewController: UIViewController {
         
         if(totalPriceAmount > 0 || shoppingCartProducts.count > 0){
             let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
-            AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentViewController: self, attributes: byCartInfos)
+            AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentView: self.view,  attributes: BYCartAttributes(tags: ["totalPriceAmount":"\(totalPriceAmount)"]), cartInfos: byCartInfos)
         }
     }
     

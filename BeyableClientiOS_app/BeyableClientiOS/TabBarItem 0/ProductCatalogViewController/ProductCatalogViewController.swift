@@ -53,8 +53,10 @@ class ProductCatalogViewController: UIViewController {
       productCellID,
       for: productCatalogCollectionView, in: self)
 
-      let category = BYCategory(CategoryId: "", CategoryName: collectionName, tags: ["Number_Product":"\(productList.count)", "backButtonTitle" : "\(backButtonTitle)"])
-      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentViewController: self, attributes: category)
+      let category = BYCategoryAttributes(CategoryId: "", CategoryName: collectionName, tags: ["Number_Product":"\(productList.count)", "backButtonTitle" : "\(backButtonTitle)"])
+      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentView: self.view, attributes: category)
+      
+      
       
       
   }

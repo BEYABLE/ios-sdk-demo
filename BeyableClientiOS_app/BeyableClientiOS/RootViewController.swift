@@ -15,15 +15,15 @@ class RootViewController: UIViewController {
     
     @IBAction
     func clickLogin(){
-        let currentUser = UserInfos(isConnectedToAccount: true, isClient: true, pseudoId: "user_981234", favoriteCategory: "")
-        AppDelegate.instance.beyableClient.setUserInfos(userInfos: currentUser)
+        let currentUser = BYVisitorInfos(isConnectedToAccount: true, isClient: true, pseudoId: "user_981234", favoriteCategory: "")
+        AppDelegate.instance.beyableClient.setVisitorInfos(visitorInfos: currentUser)
         self.performSegue(withIdentifier: "showTab", sender: nil)
     }
     
     @IBAction
     func clickVisitor(){
-        let currentUser = UserInfos(isConnectedToAccount: false, isClient: false, pseudoId: "", favoriteCategory: "")
-        AppDelegate.instance.beyableClient.setUserInfos(userInfos: currentUser)
+        let currentUser = BYVisitorInfos(isConnectedToAccount: false, isClient: false, pseudoId: "", favoriteCategory: "")
+        AppDelegate.instance.beyableClient.setVisitorInfos(visitorInfos: currentUser)
         self.performSegue(withIdentifier: "showTab", sender: nil)
     }
 }
