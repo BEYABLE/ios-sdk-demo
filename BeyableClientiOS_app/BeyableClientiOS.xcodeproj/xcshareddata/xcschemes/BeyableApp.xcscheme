@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5E85F0F22979BE5200252728"
-               BuildableName = "Shoppable.app"
+               BuildableName = "BeyableClient.app"
                BlueprintName = "ShoppableApp"
                ReferencedContainer = "container:BeyableClientiOS.xcodeproj">
             </BuildableReference>
@@ -43,12 +43,21 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5E85F0F22979BE5200252728"
-            BuildableName = "Shoppable.app"
-            BlueprintName = "ShoppableApp"
+            BlueprintIdentifier = "52D3FADD2B7A6F1E008D813C"
+            BuildableName = "BeyableiOS.app"
+            BlueprintName = "BeyableiOS"
             ReferencedContainer = "container:BeyableClientiOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5E85F0F22979BE5200252728"
+            BuildableName = "BeyableClient.app"
+            BlueprintName = "ShoppableApp"
+            ReferencedContainer = "container:BeyableClientiOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -61,11 +70,20 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5E85F0F22979BE5200252728"
-            BuildableName = "Shoppable.app"
+            BuildableName = "BeyableClient.app"
             BlueprintName = "ShoppableApp"
             ReferencedContainer = "container:BeyableClientiOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5E85F0F22979BE5200252728"
+            BuildableName = "BeyableClient.app"
+            BlueprintName = "ShoppableApp"
+            ReferencedContainer = "container:BeyableClientiOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
