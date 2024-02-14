@@ -63,7 +63,6 @@
 		52D3FB152B7A6F1E008D813C /* TabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A385822B74F8DF00A90F21 /* TabBarControllerDelegate.swift */; };
 		52D3FB162B7A6F1E008D813C /* TabBarVcProductsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A385832B74F8DF00A90F21 /* TabBarVcProductsDelegate.swift */; };
 		52D3FB172B7A6F1E008D813C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A385842B74F8DF00A90F21 /* TabBarController.swift */; };
-		52D3FB192B7A6F1E008D813C /* BeyableClient in Frameworks */ = {isa = PBXBuildFile; productRef = 52D3FADE2B7A6F1E008D813C /* BeyableClient */; };
 		52D3FB1B2B7A6F1E008D813C /* beyable_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A385682B74F8DF00A90F21 /* beyable_icon.png */; };
 		52D3FB1C2B7A6F1E008D813C /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 52A3856E2B74F8DF00A90F21 /* products.json */; };
 		52D3FB1D2B7A6F1E008D813C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52A385702B74F8DF00A90F21 /* Localizable.strings */; };
@@ -73,6 +72,7 @@
 		52D3FB212B7A6F1E008D813C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A385612B74F8DF00A90F21 /* Main.storyboard */; };
 		52D3FB222B7A6F1E008D813C /* ProductCatalogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A385222B74F8DF00A90F21 /* ProductCatalogCell.xib */; };
 		52D3FB232B7A6F1E008D813C /* ProductCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A385312B74F8DF00A90F21 /* ProductCollectionCell.xib */; };
+		65BA93DD19317E1B105E52BE /* Pods_BeyableiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C567E560DF16AB841EC8C32A /* Pods_BeyableiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,14 +142,15 @@
 		52A385822B74F8DF00A90F21 /* TabBarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarControllerDelegate.swift; sourceTree = "<group>"; };
 		52A385832B74F8DF00A90F21 /* TabBarVcProductsDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVcProductsDelegate.swift; sourceTree = "<group>"; };
 		52A385842B74F8DF00A90F21 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		52A385862B74FAE300A90F21 /* BeyableClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = BeyableClient; path = ../../BeyableClient; sourceTree = "<group>"; };
 		52A385CA2B7504C900A90F21 /* ShoppingCart+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingCart+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		52A385CB2B7504C900A90F21 /* ShoppingCart+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingCart+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		52A385CC2B7504C900A90F21 /* ShoppingCartProduct+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingCartProduct+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		52A385CD2B7504C900A90F21 /* ShoppingCartProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingCartProduct+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		52D3FB272B7A6F1E008D813C /* BeyableiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeyableiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D3FB282B7A6F1E008D813C /* ShoppableApp copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ShoppableApp copy-Info.plist"; path = "/Users/ouamassibrahim/Documents/bayable/sdk_ios/example_application_uikit/BeyableClientiOS_app/ShoppableApp copy-Info.plist"; sourceTree = "<absolute>"; };
 		5E2D0BEE2993DC4F00DCB967 /* ShoppableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F8215EA7A7DA061317D192A /* Pods-BeyableiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableiOS.debug.xcconfig"; path = "Target Support Files/Pods-BeyableiOS/Pods-BeyableiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C1F2CB3E9A857F303FBF743D /* Pods-BeyableiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableiOS.release.xcconfig"; path = "Target Support Files/Pods-BeyableiOS/Pods-BeyableiOS.release.xcconfig"; sourceTree = "<group>"; };
+		C567E560DF16AB841EC8C32A /* Pods_BeyableiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyableiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D3FB192B7A6F1E008D813C /* BeyableClient in Frameworks */,
+				65BA93DD19317E1B105E52BE /* Pods_BeyableiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +172,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A61ACDDAA5D6A93D4FDF1E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F8215EA7A7DA061317D192A /* Pods-BeyableiOS.debug.xcconfig */,
+				C1F2CB3E9A857F303FBF743D /* Pods-BeyableiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		52A3851A2B74F8DF00A90F21 /* BeyableClientiOSTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -504,6 +514,7 @@
 		52D913532B728254009BB13F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C567E560DF16AB841EC8C32A /* Pods_BeyableiOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -511,12 +522,11 @@
 		5E85F0EA2979BE5200252728 = {
 			isa = PBXGroup;
 			children = (
-				52A385862B74FAE300A90F21 /* BeyableClient */,
 				52A3851D2B74F8DF00A90F21 /* BeyableClientiOS */,
 				52A3851A2B74F8DF00A90F21 /* BeyableClientiOSTests */,
 				5E85F0F42979BE5200252728 /* Products */,
 				52D913532B728254009BB13F /* Frameworks */,
-				52D3FB282B7A6F1E008D813C /* ShoppableApp copy-Info.plist */,
+				1A61ACDDAA5D6A93D4FDF1E5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -536,18 +546,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D3FB242B7A6F1E008D813C /* Build configuration list for PBXNativeTarget "BeyableiOS" */;
 			buildPhases = (
+				D80387F5AF2D05FC1697DCE4 /* [CP] Check Pods Manifest.lock */,
 				52D3FADF2B7A6F1E008D813C /* Sources */,
 				52D3FB182B7A6F1E008D813C /* Frameworks */,
 				52D3FB1A2B7A6F1E008D813C /* Resources */,
+				B615B159DD8A9597201FAFF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BeyableiOS;
-			packageProductDependencies = (
-				52D3FADE2B7A6F1E008D813C /* BeyableClient */,
-			);
 			productName = ShoppableApp;
 			productReference = 52D3FB272B7A6F1E008D813C /* BeyableiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -632,6 +641,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B615B159DD8A9597201FAFF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyableiOS/Pods-BeyableiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyableiOS/Pods-BeyableiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeyableiOS/Pods-BeyableiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80387F5AF2D05FC1697DCE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeyableiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52D3FADF2B7A6F1E008D813C /* Sources */ = {
@@ -738,14 +789,15 @@
 /* Begin XCBuildConfiguration section */
 		52D3FB252B7A6F1E008D813C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8215EA7A7DA061317D192A /* Pods-BeyableiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AJXD28RX58;
+				DEVELOPMENT_TEAM = BR7TE9ZZZR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ShoppableApp copy-Info.plist";
+				INFOPLIST_FILE = BeyableClientiOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BeyableClientiOS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -768,14 +820,15 @@
 		};
 		52D3FB262B7A6F1E008D813C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F2CB3E9A857F303FBF743D /* Pods-BeyableiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AJXD28RX58;
+				DEVELOPMENT_TEAM = BR7TE9ZZZR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "ShoppableApp copy-Info.plist";
+				INFOPLIST_FILE = BeyableClientiOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BeyableClientiOS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -898,7 +951,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -953,7 +1006,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -994,13 +1047,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		52D3FADE2B7A6F1E008D813C /* BeyableClient */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BeyableClient;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		52A385592B74F8DF00A90F21 /* ShoppableApp.xcdatamodeld */ = {

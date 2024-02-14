@@ -9,8 +9,8 @@
 
 import UIKit
 import Foundation
-import BeyableClient
 
+import BeyableClient
 
 class ProductCatalogViewController: UIViewController {
 

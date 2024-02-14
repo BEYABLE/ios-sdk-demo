@@ -1,0 +1,16 @@
+PODS:
+  - BeyableClient (0.0.9)
+
+DEPENDENCIES:
+  - BeyableClient (from `../../BeyableClient/BeyableClient.podspec`)
+
+EXTERNAL SOURCES:
+  BeyableClient:
+    :path: "../../BeyableClient/BeyableClient.podspec"
+
+SPEC CHECKSUMS:
+  BeyableClient: 2a451779162d959cf419a6d1dbd7d82fd5b0b9d5
+
+PODFILE CHECKSUM: d805a043412066433532b4a775b78ff774db6ba1
+
+COCOAPODS: 1.15.2
