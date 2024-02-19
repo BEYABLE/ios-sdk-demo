@@ -7,11 +7,10 @@
 
 import UIKit
 import BeyableClient
-
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static private(set) var instance: AppDelegate! = nil
-    let beyableClient = BeyableClientiOS(tokenClient: "aaaaaaaaad265554b8b4b4417aa14660411b1e83c", loggingEnabledUser: true)
+    let beyableClient = BeyableClientiOS(tokenClient: "aaaaaaaaad265554b8b4b4417aa14660411b1e83c", environment: .preprod, loggingEnabledUser: true)
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
       
           AppDelegate.instance = self

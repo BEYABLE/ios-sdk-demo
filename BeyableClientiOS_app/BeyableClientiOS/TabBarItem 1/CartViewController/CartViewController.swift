@@ -90,10 +90,8 @@ class CartViewController: UIViewController {
         let totalPriceAmount = coreDataService
             .getShoppingCartTotalAmount()
         
-        if(totalPriceAmount > 0 || shoppingCartProducts.count > 0){
-            let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
-            AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentView: self.view,  attributes: BYCartAttributes(tags: ["totalPriceAmount":"\(totalPriceAmount)"]), cartInfos: byCartInfos)
-        }
+        let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
+        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentView: self.view,  attributes: BYCartAttributes(tags: ["totalPriceAmount":"\(totalPriceAmount)"]), cartInfos: byCartInfos)
     }
     
     
