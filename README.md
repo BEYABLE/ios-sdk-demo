@@ -1,6 +1,10 @@
 # BEYABLE-sdk-mobile-ios-app-uikit-example
- App démo iOS avec UIKIT pour le SDK mobile
-
+ App démo iOS avec UIKIT pour le SDK mobile iOS Beyable
+ 
+Ajouter la ligne suivante à fichier pod
+```
+pod 'BeyableClient'
+```
 
 
 # MVC, Core Data, Notification Center, UIKit & XCTest
