@@ -6,6 +6,42 @@ Ajouter la ligne suivante à fichier pod
 pod 'BeyableClient'
 ```
 
+## Intégration
+
+Avant tout apelle à le SDK,il est nécessaire initialisé avec les clefs fournie par BeYable
+
+```
+    let beyableClient = BeyableClientiOS(tokenClient: "aaaaaaaa********", environment: .prod, loggingEnabledUser: true)
+```
+
+## Usage
+À chaque affichage d'une vue, on informe le SDK.</br>
+Faire bien attention à appeller l'instance Beyable après la vue afficher (pour que le SDK puisse étudier l'affichage),
+par exemple, dans le cas d'un Fragment.
+### Example Page 'Home'
+```
+      let homePage = BYHomeAttributes(tags: ["screenTitle":"\(self.screenTitle)", "numberCategory":"\(self.productCollections.count)"])
+      
+      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentView: self.view, attributes: homePage)
+```
+## Example page ViewController produit 
+```
+     let productBY : BYProductAttributes = BYProductAttributes(reference: productObject?.id, name: productObject?.name, url: productObject?.imageUrl, priceBeforeDiscount: productObject?.price.value ?? 0.0, sellingPrice: productObject?.price.value ?? 0, stock: 1, thumbnailUrl: "", tags: ["type":"\(productObject?.type ?? "")","materiel":"\(productObject?.info?.material ?? "")"])
+      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.PRODUCT, currentView: self.view, attributes: productBY)
+```
+## Affichage des campagnes 
+
+### Modal Overlay View 
+### Header : Sticky Banner 
+#### InPage - Replace
+Pour le remplacement, il faut que les vues soient identifiés avec un accessibilityIdentifier.</br>
+La vue remplacée doit être enfant d'un UiStackView
+#### InPage - Positionné
+Pour une vue positionné, il est nécessaire d'avoir les vues identifiées avec accessibilityIdentifier.</br>
+La vue parent de la vue seléctionnée doît être un UIStackView pour permettre
+les règles de positionnement.
+
+
 
 # MVC, Core Data, Notification Center, UIKit & XCTest
 
