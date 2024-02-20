@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "52D3FADD2B7A6F1E008D813C"
-            BuildableName = "BeyableiOS.app"
-            BlueprintName = "BeyableiOS"
+            BuildableName = "BeyableExampleApplicationiOS.app"
+            BlueprintName = "BeyableExampleApplicationiOS"
             ReferencedContainer = "container:BeyableClientiOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
