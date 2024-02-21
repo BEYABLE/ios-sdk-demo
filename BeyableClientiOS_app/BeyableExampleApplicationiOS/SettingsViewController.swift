@@ -6,7 +6,7 @@
 //
 import UIKit
 import Foundation
-import BeyableClient.Swift
+import BeyableClient
 class SettingsViewController : UIViewController {
     @IBOutlet var switchProd : UISwitch?
     @IBOutlet var apiKeyField : UITextField?

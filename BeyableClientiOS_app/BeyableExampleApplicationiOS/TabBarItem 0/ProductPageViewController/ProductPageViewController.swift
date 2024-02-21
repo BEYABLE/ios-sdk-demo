@@ -9,8 +9,8 @@
  */
 
 import UIKit
-
 import BeyableClient
+
 
 
 class ProductPageViewController: UIViewController {
@@ -72,7 +72,7 @@ class ProductPageViewController: UIViewController {
     // Load Product Info
     loadImage()
     setupProductInfoLabels()
-      let productBY = BYProductAttributes(reference: productObject?.id, name: productObject?.name, url: productObject?.imageUrl, priceBeforeDiscount: productObject?.price.value ?? 0.0, sellingPrice: productObject?.price.value ?? 0, stock: 1, thumbnailUrl: "", tags: ["type":"\(productObject?.type ?? "")","materiel":"\(productObject?.info?.material ?? "")"])
+      let productBY = BYProductAttributes(reference: productObject?.id, name: productObject?.name, url: productObject?.imageUrl, priceBeforeDiscount: productObject?.price.value ?? 0.0, sellingPrice: productObject?.price.value ?? 0, stock: 1, thumbnailUrl: "", tags: ["type:\(productObject?.type ?? "")","materiel:\(productObject?.info?.material ?? "")"])
       AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.PRODUCT, currentView: self.view, attributes: productBY  )
     
   }

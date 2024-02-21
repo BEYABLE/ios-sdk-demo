@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A70F93E791B08E4A765584 /* Pods_BeyableExampleApplicationiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB127F6BE874E6F7685DD0E /* Pods_BeyableExampleApplicationiOS.framework */; };
 		52A678032B83BA0300371C62 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A678022B83BA0300371C62 /* appIcon.png */; };
 		52D3FAE02B7A6F1E008D813C /* ShoppableApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52A385592B74F8DF00A90F21 /* ShoppableApp.xcdatamodeld */; };
 		52D3FAE12B7A6F1E008D813C /* ProductCatalogCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A385242B74F8DF00A90F21 /* ProductCatalogCellDelegate.swift */; };
@@ -73,12 +74,12 @@
 		52D3FB212B7A6F1E008D813C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A385612B74F8DF00A90F21 /* Main.storyboard */; };
 		52D3FB222B7A6F1E008D813C /* ProductCatalogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A385222B74F8DF00A90F21 /* ProductCatalogCell.xib */; };
 		52D3FB232B7A6F1E008D813C /* ProductCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A385312B74F8DF00A90F21 /* ProductCollectionCell.xib */; };
-		52D5E9132B850E7F001D8C52 /* DataStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5E9122B850E7F001D8C52 /* DataStorageHelper.swift */; };
+		52D5E9132B850E7F001D8C52 /* SettingsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5E9122B850E7F001D8C52 /* SettingsHelper.swift */; };
 		52D5E9152B8513A5001D8C52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5E9142B8513A5001D8C52 /* SettingsViewController.swift */; };
-		6118EE5680A36D3C58C06E8B /* Pods_BeyableExampleApplicationiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A5D11DFEB2551A35442D0D /* Pods_BeyableExampleApplicationiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DB127F6BE874E6F7685DD0E /* Pods_BeyableExampleApplicationiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyableExampleApplicationiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3851B2B74F8DF00A90F21 /* TestCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreData.swift; sourceTree = "<group>"; };
 		52A3851C2B74F8DF00A90F21 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
 		52A385222B74F8DF00A90F21 /* ProductCatalogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCatalogCell.xib; sourceTree = "<group>"; };
@@ -151,12 +152,11 @@
 		52A385CD2B7504C900A90F21 /* ShoppingCartProduct+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShoppingCartProduct+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		52A678022B83BA0300371C62 /* appIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon.png; sourceTree = "<group>"; };
 		52D3FB272B7A6F1E008D813C /* BeyableExampleApplicationiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeyableExampleApplicationiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52D5E9122B850E7F001D8C52 /* DataStorageHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStorageHelper.swift; sourceTree = "<group>"; };
+		52D5E9122B850E7F001D8C52 /* SettingsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHelper.swift; sourceTree = "<group>"; };
 		52D5E9142B8513A5001D8C52 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		52DBB8FCD2C691C5F90A5CC1 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableExampleApplicationiOS.debug.xcconfig"; path = "Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5E2D0BEE2993DC4F00DCB967 /* ShoppableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8A5D11DFEB2551A35442D0D /* Pods_BeyableExampleApplicationiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyableExampleApplicationiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF57E16AB96C137A30DEA020 /* Pods-BeyableExampleApplicationiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableExampleApplicationiOS.release.xcconfig"; path = "Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS.release.xcconfig"; sourceTree = "<group>"; };
-		E7B30EC04E618BF6FD6EC803 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableExampleApplicationiOS.debug.xcconfig"; path = "Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8C579A73BFA96517ED35EDDE /* Pods-BeyableExampleApplicationiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableExampleApplicationiOS.release.xcconfig"; path = "Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6118EE5680A36D3C58C06E8B /* Pods_BeyableExampleApplicationiOS.framework in Frameworks */,
+				12A70F93E791B08E4A765584 /* Pods_BeyableExampleApplicationiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,23 +178,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0EAC5C86D39711310BD1BBC4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C8A5D11DFEB2551A35442D0D /* Pods_BeyableExampleApplicationiOS.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1A61ACDDAA5D6A93D4FDF1E5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E7B30EC04E618BF6FD6EC803 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */,
-				CF57E16AB96C137A30DEA020 /* Pods-BeyableExampleApplicationiOS.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		52A3851A2B74F8DF00A90F21 /* BeyableClientiOSTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -454,7 +437,7 @@
 		52A3855B2B74F8DF00A90F21 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				52D5E9122B850E7F001D8C52 /* DataStorageHelper.swift */,
+				52D5E9122B850E7F001D8C52 /* SettingsHelper.swift */,
 				52A3855C2B74F8DF00A90F21 /* JsonLoader.swift */,
 				52A3855D2B74F8DF00A90F21 /* ObjectCollectionHelper.swift */,
 				52A3855E2B74F8DF00A90F21 /* ImageDownloader.swift */,
@@ -534,8 +517,8 @@
 				52A3851D2B74F8DF00A90F21 /* BeyableExampleApplicationiOS */,
 				52A3851A2B74F8DF00A90F21 /* BeyableClientiOSTests */,
 				5E85F0F42979BE5200252728 /* Products */,
-				1A61ACDDAA5D6A93D4FDF1E5 /* Pods */,
-				0EAC5C86D39711310BD1BBC4 /* Frameworks */,
+				DF4FE75E4FA8322BE9B6D9D1 /* Pods */,
+				9AD22FFC57F8362ECA8AA994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -548,6 +531,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9AD22FFC57F8362ECA8AA994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB127F6BE874E6F7685DD0E /* Pods_BeyableExampleApplicationiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF4FE75E4FA8322BE9B6D9D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52DBB8FCD2C691C5F90A5CC1 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */,
+				8C579A73BFA96517ED35EDDE /* Pods-BeyableExampleApplicationiOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -555,11 +555,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D3FB242B7A6F1E008D813C /* Build configuration list for PBXNativeTarget "BeyableExampleApplicationiOS" */;
 			buildPhases = (
-				288AFDCC6D4B221580B48035 /* [CP] Check Pods Manifest.lock */,
+				6F1A992096895765B2545D29 /* [CP] Check Pods Manifest.lock */,
 				52D3FADF2B7A6F1E008D813C /* Sources */,
 				52D3FB182B7A6F1E008D813C /* Frameworks */,
 				52D3FB1A2B7A6F1E008D813C /* Resources */,
-				FC10C27ED5EAC621B435CB5E /* [CP] Embed Pods Frameworks */,
+				039AAC0128D9D88B5BAFBCD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -653,7 +653,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		288AFDCC6D4B221580B48035 /* [CP] Check Pods Manifest.lock */ = {
+		039AAC0128D9D88B5BAFBCD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F1A992096895765B2545D29 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -673,23 +690,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC10C27ED5EAC621B435CB5E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -726,7 +726,7 @@
 				52D3FAF72B7A6F1E008D813C /* PickerViewDataDelegate.swift in Sources */,
 				52D3FAF82B7A6F1E008D813C /* QuantityPickerViewDelegate.swift in Sources */,
 				52D3FAF92B7A6F1E008D813C /* CartVcCellDelegate.swift in Sources */,
-				52D5E9132B850E7F001D8C52 /* DataStorageHelper.swift in Sources */,
+				52D5E9132B850E7F001D8C52 /* SettingsHelper.swift in Sources */,
 				52D3FAFA2B7A6F1E008D813C /* CartVcPickerViewDelegate.swift in Sources */,
 				52D3FAFB2B7A6F1E008D813C /* CartViewControllerDelegate.swift in Sources */,
 				52D3FAFC2B7A6F1E008D813C /* CartVcTableViewDelegate.swift in Sources */,
@@ -801,10 +801,9 @@
 /* Begin XCBuildConfiguration section */
 		52D3FB252B7A6F1E008D813C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7B30EC04E618BF6FD6EC803 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */;
+			baseConfigurationReference = 52DBB8FCD2C691C5F90A5CC1 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BR7TE9ZZZR;
@@ -832,10 +831,9 @@
 		};
 		52D3FB262B7A6F1E008D813C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF57E16AB96C137A30DEA020 /* Pods-BeyableExampleApplicationiOS.release.xcconfig */;
+			baseConfigurationReference = 8C579A73BFA96517ED35EDDE /* Pods-BeyableExampleApplicationiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BR7TE9ZZZR;

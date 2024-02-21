@@ -7,6 +7,7 @@
 
 import UIKit
 import BeyableClient
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static private(set) var instance: AppDelegate! = nil

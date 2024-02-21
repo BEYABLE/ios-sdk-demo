@@ -7,8 +7,8 @@
  */
 
 import UIKit
-
 import BeyableClient
+
 
 class ProductOverviewViewController: UIViewController {
 
@@ -50,7 +50,7 @@ class ProductOverviewViewController: UIViewController {
       for: productCollectionsList, in: self)
     
       
-      let homePage = BYHomeAttributes(tags: ["screenTitle":"\(self.screenTitle)", "numberCategory":"\(self.productCollections.count)"])
+      let homePage = BYHomeAttributes(tags: ["screenTitle : \(self.screenTitle)", "numberCategory : \(self.productCollections.count)"])
       
       AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentView: self.view, attributes: homePage)
         

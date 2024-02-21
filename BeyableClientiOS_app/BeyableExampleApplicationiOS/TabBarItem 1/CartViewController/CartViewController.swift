@@ -91,7 +91,7 @@ class CartViewController: UIViewController {
             .getShoppingCartTotalAmount()
         
         let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
-        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentView: self.view,  attributes: BYCartAttributes(tags: ["totalPriceAmount":"\(totalPriceAmount)"]), cartInfos: byCartInfos)
+        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentView: self.view,  attributes: BYCartAttributes(tags: ["totalPriceAmount:\(totalPriceAmount)"]), cartInfos: byCartInfos)
     }
     
     
@@ -273,7 +273,7 @@ extension CartViewController {
         var items = [BYCartItemInfos]()
         for cartProduit in shoppingCartProducts {
             
-            items.append(BYCartItemInfos(productReference: cartProduit.id, productName: cartProduit.name, productUrl: cartProduit.imgUrl, productPrice: cartProduit.price, quantity: 1, thumbnailUrl: "", tags: [:]))
+            items.append(BYCartItemInfos(productReference: cartProduit.id, productName: cartProduit.name, productUrl: cartProduit.imgUrl, productPrice: cartProduit.price, quantity: 1, thumbnailUrl: "", tags: []))
         }
         
         return BYCartInfos(items: items)
