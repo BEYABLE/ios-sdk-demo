@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12A70F93E791B08E4A765584 /* Pods_BeyableExampleApplicationiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB127F6BE874E6F7685DD0E /* Pods_BeyableExampleApplicationiOS.framework */; };
 		52A678032B83BA0300371C62 /* appIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 52A678022B83BA0300371C62 /* appIcon.png */; };
 		52D3FAE02B7A6F1E008D813C /* ShoppableApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52A385592B74F8DF00A90F21 /* ShoppableApp.xcdatamodeld */; };
 		52D3FAE12B7A6F1E008D813C /* ProductCatalogCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A385242B74F8DF00A90F21 /* ProductCatalogCellDelegate.swift */; };
@@ -76,10 +75,21 @@
 		52D3FB232B7A6F1E008D813C /* ProductCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A385312B74F8DF00A90F21 /* ProductCollectionCell.xib */; };
 		52D5E9132B850E7F001D8C52 /* SettingsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5E9122B850E7F001D8C52 /* SettingsHelper.swift */; };
 		52D5E9152B8513A5001D8C52 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5E9142B8513A5001D8C52 /* SettingsViewController.swift */; };
+		66D07FCB2C46861500D09ED6 /* BeyableSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 66D07FCA2C46861500D09ED6 /* BeyableSDK */; };
+		66F784532C58D614004D818D /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784522C58D614004D818D /* SwiftUIViewController.swift */; };
+		66F784562C58D64B004D818D /* ProductsCollectionPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784552C58D64B004D818D /* ProductsCollectionPageView.swift */; };
+		66F784582C58D950004D818D /* BasketProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784572C58D950004D818D /* BasketProductCardView.swift */; };
+		66F7845A2C58EE3F004D818D /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784592C58EE3F004D818D /* ProductDetailView.swift */; };
+		66F7845D2C591F1D004D818D /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7845C2C591F1D004D818D /* Icon.swift */; };
+		66F7845F2C591F30004D818D /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F7845E2C591F30004D818D /* Typography.swift */; };
+		66F784612C591F42004D818D /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784602C591F42004D818D /* Spacing.swift */; };
+		66F784632C591F5E004D818D /* Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784622C591F5E004D818D /* Sizing.swift */; };
+		66F784652C591F70004D818D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784642C591F70004D818D /* Color.swift */; };
+		66F784672C591F98004D818D /* CustomerRatingRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784662C591F98004D818D /* CustomerRatingRepresentable.swift */; };
+		66F784692C591FCA004D818D /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784682C591FCA004D818D /* CartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3DB127F6BE874E6F7685DD0E /* Pods_BeyableExampleApplicationiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeyableExampleApplicationiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A3851B2B74F8DF00A90F21 /* TestCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreData.swift; sourceTree = "<group>"; };
 		52A3851C2B74F8DF00A90F21 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
 		52A385222B74F8DF00A90F21 /* ProductCatalogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCatalogCell.xib; sourceTree = "<group>"; };
@@ -154,9 +164,18 @@
 		52D3FB272B7A6F1E008D813C /* BeyableExampleApplicationiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeyableExampleApplicationiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D5E9122B850E7F001D8C52 /* SettingsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHelper.swift; sourceTree = "<group>"; };
 		52D5E9142B8513A5001D8C52 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		52DBB8FCD2C691C5F90A5CC1 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableExampleApplicationiOS.debug.xcconfig"; path = "Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5E2D0BEE2993DC4F00DCB967 /* ShoppableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C579A73BFA96517ED35EDDE /* Pods-BeyableExampleApplicationiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeyableExampleApplicationiOS.release.xcconfig"; path = "Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS.release.xcconfig"; sourceTree = "<group>"; };
+		66F784522C58D614004D818D /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
+		66F784552C58D64B004D818D /* ProductsCollectionPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionPageView.swift; sourceTree = "<group>"; };
+		66F784572C58D950004D818D /* BasketProductCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasketProductCardView.swift; sourceTree = "<group>"; };
+		66F784592C58EE3F004D818D /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		66F7845C2C591F1D004D818D /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		66F7845E2C591F30004D818D /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		66F784602C591F42004D818D /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		66F784622C591F5E004D818D /* Sizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizing.swift; sourceTree = "<group>"; };
+		66F784642C591F70004D818D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		66F784662C591F98004D818D /* CustomerRatingRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRatingRepresentable.swift; sourceTree = "<group>"; };
+		66F784682C591FCA004D818D /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +183,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A70F93E791B08E4A765584 /* Pods_BeyableExampleApplicationiOS.framework in Frameworks */,
+				66D07FCB2C46861500D09ED6 /* BeyableSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,31 +209,32 @@
 		52A3851D2B74F8DF00A90F21 /* BeyableExampleApplicationiOS */ = {
 			isa = PBXGroup;
 			children = (
-				52A3851E2B74F8DF00A90F21 /* TabBarItem 0 */,
-				52A3853E2B74F8DF00A90F21 /* RootViewController.swift */,
-				52A3853F2B74F8DF00A90F21 /* TabBarItem 1 */,
-				52A385542B74F8DF00A90F21 /* CoreData Service */,
-				52A385572B74F8DF00A90F21 /* Assets.xcassets */,
+				52A3857A2B74F8DF00A90F21 /* Animations */,
 				52A385582B74F8DF00A90F21 /* CoreData */,
-				52A3855B2B74F8DF00A90F21 /* Utils */,
-				52A3855F2B74F8DF00A90F21 /* LaunchScreen.storyboard */,
-				52A385612B74F8DF00A90F21 /* Main.storyboard */,
+				52A385542B74F8DF00A90F21 /* CoreData Service */,
 				52A385632B74F8DF00A90F21 /* Extensions */,
-				52A385682B74F8DF00A90F21 /* beyable_icon.png */,
-				52A678022B83BA0300371C62 /* appIcon.png */,
+				52A3857F2B74F8DF00A90F21 /* TabBarController */,
+				52A3851E2B74F8DF00A90F21 /* TabBarItem 0 */,
+				52A3853F2B74F8DF00A90F21 /* TabBarItem 1 */,
+				66F784502C58D593004D818D /* TabBarItem 2 */,
+				52A3855B2B74F8DF00A90F21 /* Utils */,
 				52A385692B74F8DF00A90F21 /* Product Helpers */,
-				52A3856E2B74F8DF00A90F21 /* products.json */,
 				52A3856F2B74F8DF00A90F21 /* LocalizationSetup */,
+				52A3853E2B74F8DF00A90F21 /* RootViewController.swift */,
 				52A385CA2B7504C900A90F21 /* ShoppingCart+CoreDataClass.swift */,
 				52A385CB2B7504C900A90F21 /* ShoppingCart+CoreDataProperties.swift */,
 				52A385CC2B7504C900A90F21 /* ShoppingCartProduct+CoreDataClass.swift */,
 				52A385CD2B7504C900A90F21 /* ShoppingCartProduct+CoreDataProperties.swift */,
 				52A385782B74F8DF00A90F21 /* AppDelegate.swift */,
-				52A385792B74F8DF00A90F21 /* Info.plist */,
-				52A3857A2B74F8DF00A90F21 /* Animations */,
 				52A3857E2B74F8DF00A90F21 /* SceneDelegate.swift */,
-				52A3857F2B74F8DF00A90F21 /* TabBarController */,
 				52D5E9142B8513A5001D8C52 /* SettingsViewController.swift */,
+				52A385572B74F8DF00A90F21 /* Assets.xcassets */,
+				52A3855F2B74F8DF00A90F21 /* LaunchScreen.storyboard */,
+				52A385612B74F8DF00A90F21 /* Main.storyboard */,
+				52A385682B74F8DF00A90F21 /* beyable_icon.png */,
+				52A678022B83BA0300371C62 /* appIcon.png */,
+				52A3856E2B74F8DF00A90F21 /* products.json */,
+				52A385792B74F8DF00A90F21 /* Info.plist */,
 			);
 			path = BeyableExampleApplicationiOS;
 			sourceTree = "<group>";
@@ -233,8 +253,8 @@
 			isa = PBXGroup;
 			children = (
 				52A385202B74F8DF00A90F21 /* CollectionCell */,
-				52A385262B74F8DF00A90F21 /* ProductCatalogViewController.swift */,
 				52A385272B74F8DF00A90F21 /* Delegates */,
+				52A385262B74F8DF00A90F21 /* ProductCatalogViewController.swift */,
 			);
 			path = ProductCatalogViewController;
 			sourceTree = "<group>";
@@ -281,8 +301,8 @@
 			isa = PBXGroup;
 			children = (
 				52A3852E2B74F8DF00A90F21 /* CollectionCell */,
-				52A385322B74F8DF00A90F21 /* ProductOverviewViewController.swift */,
 				52A385332B74F8DF00A90F21 /* Delegates */,
+				52A385322B74F8DF00A90F21 /* ProductOverviewViewController.swift */,
 			);
 			path = ProductCollectionsController;
 			sourceTree = "<group>";
@@ -318,9 +338,9 @@
 		52A385382B74F8DF00A90F21 /* ProductPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				52A385392B74F8DF00A90F21 /* ProductPageViewController.swift */,
 				52A3853A2B74F8DF00A90F21 /* Delegates */,
 				52A3853C2B74F8DF00A90F21 /* Checkmark Animation */,
+				52A385392B74F8DF00A90F21 /* ProductPageViewController.swift */,
 			);
 			path = ProductPageViewController;
 			sourceTree = "<group>";
@@ -437,6 +457,7 @@
 		52A3855B2B74F8DF00A90F21 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				66F7845B2C591F0C004D818D /* SwiftUI */,
 				52D5E9122B850E7F001D8C52 /* SettingsHelper.swift */,
 				52A3855C2B74F8DF00A90F21 /* JsonLoader.swift */,
 				52A3855D2B74F8DF00A90F21 /* ObjectCollectionHelper.swift */,
@@ -517,8 +538,6 @@
 				52A3851D2B74F8DF00A90F21 /* BeyableExampleApplicationiOS */,
 				52A3851A2B74F8DF00A90F21 /* BeyableClientiOSTests */,
 				5E85F0F42979BE5200252728 /* Products */,
-				DF4FE75E4FA8322BE9B6D9D1 /* Pods */,
-				9AD22FFC57F8362ECA8AA994 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -531,21 +550,45 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9AD22FFC57F8362ECA8AA994 /* Frameworks */ = {
+		66F784502C58D593004D818D /* TabBarItem 2 */ = {
 			isa = PBXGroup;
 			children = (
-				3DB127F6BE874E6F7685DD0E /* Pods_BeyableExampleApplicationiOS.framework */,
+				66F784512C58D5A1004D818D /* SwiftUiViewController */,
 			);
-			name = Frameworks;
+			path = "TabBarItem 2";
 			sourceTree = "<group>";
 		};
-		DF4FE75E4FA8322BE9B6D9D1 /* Pods */ = {
+		66F784512C58D5A1004D818D /* SwiftUiViewController */ = {
 			isa = PBXGroup;
 			children = (
-				52DBB8FCD2C691C5F90A5CC1 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */,
-				8C579A73BFA96517ED35EDDE /* Pods-BeyableExampleApplicationiOS.release.xcconfig */,
+				66F784542C58D633004D818D /* Views */,
+				66F784522C58D614004D818D /* SwiftUIViewController.swift */,
 			);
-			path = Pods;
+			path = SwiftUiViewController;
+			sourceTree = "<group>";
+		};
+		66F784542C58D633004D818D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66F784572C58D950004D818D /* BasketProductCardView.swift */,
+				66F784552C58D64B004D818D /* ProductsCollectionPageView.swift */,
+				66F784592C58EE3F004D818D /* ProductDetailView.swift */,
+				66F784662C591F98004D818D /* CustomerRatingRepresentable.swift */,
+				66F784682C591FCA004D818D /* CartButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66F7845B2C591F0C004D818D /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				66F7845C2C591F1D004D818D /* Icon.swift */,
+				66F7845E2C591F30004D818D /* Typography.swift */,
+				66F784602C591F42004D818D /* Spacing.swift */,
+				66F784622C591F5E004D818D /* Sizing.swift */,
+				66F784642C591F70004D818D /* Color.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -555,17 +598,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D3FB242B7A6F1E008D813C /* Build configuration list for PBXNativeTarget "BeyableExampleApplicationiOS" */;
 			buildPhases = (
-				6F1A992096895765B2545D29 /* [CP] Check Pods Manifest.lock */,
 				52D3FADF2B7A6F1E008D813C /* Sources */,
 				52D3FB182B7A6F1E008D813C /* Frameworks */,
 				52D3FB1A2B7A6F1E008D813C /* Resources */,
-				039AAC0128D9D88B5BAFBCD7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BeyableExampleApplicationiOS;
+			packageProductDependencies = (
+				66D07FCA2C46861500D09ED6 /* BeyableSDK */,
+			);
 			productName = ShoppableApp;
 			productReference = 52D3FB272B7A6F1E008D813C /* BeyableExampleApplicationiOS.app */;
 			productType = "com.apple.product-type.application";
@@ -615,6 +659,9 @@
 				es,
 			);
 			mainGroup = 5E85F0EA2979BE5200252728;
+			packageReferences = (
+				6620A57C2C36EF8400951BD2 /* XCLocalSwiftPackageReference "../../BeyableSDK" */,
+			);
 			productRefGroup = 5E85F0F42979BE5200252728 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -652,48 +699,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		039AAC0128D9D88B5BAFBCD7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeyableExampleApplicationiOS/Pods-BeyableExampleApplicationiOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6F1A992096895765B2545D29 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BeyableExampleApplicationiOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		52D3FADF2B7A6F1E008D813C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -709,6 +714,7 @@
 				52D3FAE72B7A6F1E008D813C /* ProductCatalogVcCollectionDelegate.swift in Sources */,
 				52D3FAE82B7A6F1E008D813C /* ProductCatalogVcPageDelegate.swift in Sources */,
 				52D3FAE92B7A6F1E008D813C /* ProductCollectionCell.swift in Sources */,
+				66F784652C591F70004D818D /* Color.swift in Sources */,
 				52D3FAEA2B7A6F1E008D813C /* ShoppingCartProduct+CoreDataClass.swift in Sources */,
 				52D3FAEB2B7A6F1E008D813C /* ProductOverviewViewController.swift in Sources */,
 				52D3FAEC2B7A6F1E008D813C /* ProductOverviewViewControllerDelegate.swift in Sources */,
@@ -718,19 +724,26 @@
 				52D3FAF02B7A6F1E008D813C /* ProductOverviewVcCatalogDelegate.swift in Sources */,
 				52D3FAF12B7A6F1E008D813C /* ProductPageViewController.swift in Sources */,
 				52D3FAF22B7A6F1E008D813C /* ProductPageViewControllerDelegate.swift in Sources */,
+				66F784692C591FCA004D818D /* CartButton.swift in Sources */,
 				52D3FAF32B7A6F1E008D813C /* ProductPageVcCheckmark.swift in Sources */,
 				52D3FAF42B7A6F1E008D813C /* RootViewController.swift in Sources */,
 				52D3FAF52B7A6F1E008D813C /* CartViewController.swift in Sources */,
 				52D3FAF62B7A6F1E008D813C /* QuantityPickerView.swift in Sources */,
 				52D5E9152B8513A5001D8C52 /* SettingsViewController.swift in Sources */,
 				52D3FAF72B7A6F1E008D813C /* PickerViewDataDelegate.swift in Sources */,
+				66F784562C58D64B004D818D /* ProductsCollectionPageView.swift in Sources */,
 				52D3FAF82B7A6F1E008D813C /* QuantityPickerViewDelegate.swift in Sources */,
+				66F784532C58D614004D818D /* SwiftUIViewController.swift in Sources */,
 				52D3FAF92B7A6F1E008D813C /* CartVcCellDelegate.swift in Sources */,
 				52D5E9132B850E7F001D8C52 /* SettingsHelper.swift in Sources */,
+				66F7845D2C591F1D004D818D /* Icon.swift in Sources */,
 				52D3FAFA2B7A6F1E008D813C /* CartVcPickerViewDelegate.swift in Sources */,
+				66F7845A2C58EE3F004D818D /* ProductDetailView.swift in Sources */,
 				52D3FAFB2B7A6F1E008D813C /* CartViewControllerDelegate.swift in Sources */,
+				66F7845F2C591F30004D818D /* Typography.swift in Sources */,
 				52D3FAFC2B7A6F1E008D813C /* CartVcTableViewDelegate.swift in Sources */,
 				52D3FAFD2B7A6F1E008D813C /* CartProductCell.swift in Sources */,
+				66F784612C591F42004D818D /* Spacing.swift in Sources */,
 				52D3FAFE2B7A6F1E008D813C /* CartProductCellDelegate.swift in Sources */,
 				52D3FAFF2B7A6F1E008D813C /* CartCellTextFieldDelegate.swift in Sources */,
 				52D3FB002B7A6F1E008D813C /* CartVcObservers.swift in Sources */,
@@ -738,6 +751,7 @@
 				52D3FB022B7A6F1E008D813C /* CoreDataService.swift in Sources */,
 				52D3FB032B7A6F1E008D813C /* JsonLoader.swift in Sources */,
 				52D3FB042B7A6F1E008D813C /* ObjectCollectionHelper.swift in Sources */,
+				66F784582C58D950004D818D /* BasketProductCardView.swift in Sources */,
 				52D3FB052B7A6F1E008D813C /* ImageDownloader.swift in Sources */,
 				52D3FB062B7A6F1E008D813C /* ViewExtensions.swift in Sources */,
 				52D3FB072B7A6F1E008D813C /* StringExtensions.swift in Sources */,
@@ -752,11 +766,13 @@
 				52D3FB102B7A6F1E008D813C /* ShoppingCartProduct+CoreDataProperties.swift in Sources */,
 				52D3FB112B7A6F1E008D813C /* ButtonAnimationHelper.swift in Sources */,
 				52D3FB122B7A6F1E008D813C /* CheckmarkView.swift in Sources */,
+				66F784672C591F98004D818D /* CustomerRatingRepresentable.swift in Sources */,
 				52D3FB132B7A6F1E008D813C /* SceneDelegate.swift in Sources */,
 				52D3FB142B7A6F1E008D813C /* TabBarVcCartDelegate.swift in Sources */,
 				52D3FB152B7A6F1E008D813C /* TabBarControllerDelegate.swift in Sources */,
 				52D3FB162B7A6F1E008D813C /* TabBarVcProductsDelegate.swift in Sources */,
 				52D3FB172B7A6F1E008D813C /* TabBarController.swift in Sources */,
+				66F784632C591F5E004D818D /* Sizing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,13 +817,17 @@
 /* Begin XCBuildConfiguration section */
 		52D3FB252B7A6F1E008D813C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52DBB8FCD2C691C5F90A5CC1 /* Pods-BeyableExampleApplicationiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = BR7TE9ZZZR;
+				DEVELOPMENT_TEAM = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/Pods/Headers/Public";
 				INFOPLIST_FILE = BeyableExampleApplicationiOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BeyableClientiOS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -820,9 +840,21 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(PROJECT_DIR)/Pods",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyable.example-uikit.application.sdk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -831,13 +863,20 @@
 		};
 		52D3FB262B7A6F1E008D813C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C579A73BFA96517ED35EDDE /* Pods-BeyableExampleApplicationiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_TEAM = BR7TE9ZZZR;
+				DEVELOPMENT_TEAM = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Pods/Headers/Public",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = BeyableExampleApplicationiOS/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = BeyableClientiOS;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -850,9 +889,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(PROJECT_DIR)/Pods",
+				);
 				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beyable.example-uikit.application.sdk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1057,6 +1103,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		6620A57C2C36EF8400951BD2 /* XCLocalSwiftPackageReference "../../BeyableSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../BeyableSDK;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66D07FCA2C46861500D09ED6 /* BeyableSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BeyableSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		52A385592B74F8DF00A90F21 /* ShoppableApp.xcdatamodeld */ = {

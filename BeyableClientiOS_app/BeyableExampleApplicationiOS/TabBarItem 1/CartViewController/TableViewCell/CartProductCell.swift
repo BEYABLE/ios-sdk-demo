@@ -40,41 +40,39 @@ class CartProductCell: UITableViewCell {
   
   // Item Count in Shopping Cart
   var itemCountInShoppingCart = 0
-  var newPickerValue = 0
+    var newPickerValue = 0
   
   
-  // MARK: - awakeFromNib
+    // MARK: - awakeFromNib
   
-  override func awakeFromNib() {
-    super.awakeFromNib()
+    override func awakeFromNib() {
+        super.awakeFromNib()
     
-    // Setup Options button
-    setupOptionsButton()
+        // Setup Options button
+        setupOptionsButton()
     
-    // Add drop shadow to the cell
-    addDropShadowToBgView()
+        // Add drop shadow to the cell
+        addDropShadowToBgView()
     
-    // UI Style
-    priceLabelStyle()
-    thumbnailStyle()
+        // UI Style
+        priceLabelStyle()
+        thumbnailStyle()
     
-    // Setup Change Quantity button
-    changeQuantityButton.delegate = self
-    changeQuantityButtonStyle()
-
-  }
+        // Setup Change Quantity button
+        changeQuantityButton.delegate = self
+        changeQuantityButtonStyle()
+    }
   
   
-  // MARK: - prepareForReuse
-  
-  override func prepareForReuse() {
-    super.prepareForReuse()
-    itemCountInShoppingCart = 0
+    // MARK: - prepareForReuse
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        itemCountInShoppingCart = 0
     
-    //Get the imageView ready for a new image load
-    onReuse()
-    productImageView.image = nil
-  }
+        //Get the imageView ready for a new image load
+        onReuse()
+        productImageView.image = nil
+    }
   
   
   // MARK: - Button Actions

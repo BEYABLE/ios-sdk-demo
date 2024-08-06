@@ -6,14 +6,13 @@
 //
 
 import UIKit
-import BeyableClient
+import BeyableSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     static private(set) var instance: AppDelegate! = nil
-    var beyableClient : BeyableClientiOS!
+    var beyableClient : BeyableSDK!
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
         AppDelegate.instance = self
         
         setBeyableClient()
@@ -28,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             env = EnvironmentBeyable.preprod.rawValue
         }
 
-        beyableClient = BeyableClientiOS(tokenClient: token!, environment: SettingsHelper.getEnvByString(envString: env ?? EnvironmentBeyable.production.rawValue), loggingEnabledUser: true)
+        beyableClient = BeyableSDK(tokenClient: token!, environment: SettingsHelper.getEnvByString(envString: env ?? EnvironmentBeyable.production.rawValue), loggingEnabledUser: true)
     }
     
     // MARK: UISceneSession Lifecycle

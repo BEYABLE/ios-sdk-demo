@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import BeyableClient
+import BeyableSDK
+
 ///  A class that manages the saving of certain data in the shared preferences of the phone
 class SettingsHelper {
     

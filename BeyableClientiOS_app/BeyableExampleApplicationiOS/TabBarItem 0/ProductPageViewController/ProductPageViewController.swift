@@ -9,213 +9,147 @@
  */
 
 import UIKit
-import BeyableClient
-
+import BeyableSDK
 
 
 class ProductPageViewController: UIViewController {
 
+    // MARK: - Properties
+    weak var productPageViewControllerDelegate: ProductPageViewControllerDelegate?
   
-  // MARK: - Properties
+    @IBOutlet weak var blurView: UIView!
+    @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var containerScrollView: UIScrollView!
+    @IBOutlet weak var productDescriptionLabel: UILabel!
+    @IBOutlet weak var productPriceLabel: UILabel!
+    @IBOutlet weak var addToCartButton: UIButton!
   
-  // Delegate
-  weak var productPageViewControllerDelegate: ProductPageViewControllerDelegate?
+    var productObject: Product?
+    var attributedCartButtonText: NSAttributedString?
+    var imageLoader: ImageDownloader?
+    var checkmark: CheckmarkView!
   
-  // Blur View
-  @IBOutlet weak var blurView: UIView!
+    // MARK: - View Controller's Life Cycle
   
-  // Product Object
-  var productObject: Product?
-  
-  // Product Image
-  @IBOutlet weak var productImageView: UIImageView!
-  
-  // ScrollView - Container View
-  @IBOutlet weak var containerScrollView: UIScrollView!
-  
-  // Product Info
-  @IBOutlet weak var productNameLabel: UILabel!
-  @IBOutlet weak var productDescriptionLabel: UILabel!
-  @IBOutlet weak var productPriceLabel: UILabel!
-  
-  // Add to Cart Button
-  @IBOutlet weak var addToCartButton: UIButton!
-  var attributedCartButtonText: NSAttributedString?
-  
-  // Image Loader
-  var imageLoader: ImageDownloader?
-  
-  // Checkmark Animation
-  @IBOutlet weak var checkmarkBGView: UIView!
-  var checkmark: CheckmarkView!
-  
-    
-  // MARK: - View Controller's Life Cycle
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    // Navigation Bar
-    setupNavigationBar()
-    
-    // ScrollView - Container View
-    setupContainerScrollView()
-    
-    // Setup UI
-    setAddToCartButtonText()
-    setupAddToCartButton(isEnabled: true)
-
-    // UI Style
-    thumbnailStyle()
-    addToCartButtonStyle()
-    
-    // Load Product Info
-    loadImage()
-    setupProductInfoLabels()
-      let productBY = BYProductAttributes(reference: productObject?.id, name: productObject?.name, url: productObject?.imageUrl, priceBeforeDiscount: productObject?.price.value ?? 0.0, sellingPrice: productObject?.price.value ?? 0, stock: 1, thumbnailUrl: "", tags: ["type:\(productObject?.type ?? "")","materiel:\(productObject?.info?.material ?? "")"])
-      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.PRODUCT, currentView: self.view, attributes: productBY  )
-    
-  }
-  
-  
-  // MARK: - Button Actions
-  
-  @IBAction func addToCartButtonAction(_ sender: UIButton) {
-    
-    /*
-     Update the products in the Shopping Cart array
-     in TabBarController
-     */
-    productPageViewControllerDelegate?
-      .didTapAddToCartButtonFromProductPage(for: productObject!)
-  }
-  
-}
-
-
-// MARK: - Setup UI
-
-extension ProductPageViewController {
-  
-  func setupNavigationBar() {
-    title = NSLocalizedString(
-      "Product",
-      comment: "Title from ProductPageViewController")
-  }
-  
-  // Setup ContainerScrollView
-  func setupContainerScrollView() {
-    containerScrollView.contentInset = UIEdgeInsets(
-      top: 0, left: 0, bottom: 120, right: 0)
-  }
-  
-  // AddToCart button's default text
-  func setAddToCartButtonText() {
-    
-    let addToCartButtonText = NSLocalizedString(
-      "Add to Shopping Cart",
-      comment: "Add to Shopping Cart Button label text")
-    
-    attributedCartButtonText = addToCartButtonText
-      .toStyleString(with: 16, and: .semibold)
-  }
-  
-  // Setup the Add To Cart button
-  func setupAddToCartButton(isEnabled: Bool) {
-    
-    // Check if the button has a Checkmark animating on top of it
-    let buttonText = isEnabled ?
-      attributedCartButtonText :
-      NSAttributedString(string: "", attributes: nil)
-    
-    // Set the button's text
-    addToCartButton.setAttributedTitle(
-      buttonText, for: .normal)
-    
-    addToCartButton.isEnabled = isEnabled
-  }
-  
-}
-
-
-// MARK: - UI Style
-
-extension ProductPageViewController {
-  
-  func thumbnailStyle() {
-    
-    // Customize the edge of the ContainerView
-    productImageView.addBorderStyle(
-      borderWidth: 1,
-      borderColor: .imageBorderGray)
-    
-    productImageView.addCornerRadius(5)
-    
-    // Add drop shadow to the product's imageView
-    productImageView.addDropShadow(
-      opacity: 0.23,
-      radius: 6,
-      offset: CGSize.zero,
-      lightColor: .gray,
-      darkColor: .white
-    )
-  }
-  
-  // Add To Cart button's style
-  func addToCartButtonStyle() {
-    addToCartButton.addCornerRadius(25)
-  }
-  
-}
-
-
-// MARK: - Load Product Info
-
-extension ProductPageViewController {
-  
-  /*
-   Load the image of the product from a URL
-   */
-  func loadImage() {
-    
-    if
-      let product = productObject,
-      let imageURL = ProductInfoHelper.canCreateImageUrl(from: product.imageUrl)
-    {
-      
-      // Attempt to load image
-      let _ = imageLoader?.loadImage(imageURL) { result in
-        do {
-          let image = try result.get()
-          
-          // The UI must be accessed through the main thread
-          DispatchQueue.main.async {
-            self.productImageView.image = image
-          }
-        }
-        catch {
-          print("ERROR loading image with error: \(error.localizedDescription)!")
-        }
-      }
-      // --> End of loading image closure
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupNavigationBar()
+        setupContainerScrollView()
+        setupUI()
+        loadProductInfo()
+        sendProductViewEventToBeyable()
     }
-  }
+    
+    // MARK: - Button Actions
   
-  func setupProductInfoLabels() {
-    if let productObj = productObject {
-      
-      // Add the name of the product
-      productNameLabel.attributedText = ProductAttributedStringHelper
-        .getAttributedName(from: productObj.name, withSize: 18)
-      
-      // Add the description of the product
-      productDescriptionLabel.attributedText = ProductAttributedStringHelper
-        .getAttributedDescription(from: productObj, withSize: 18)
-      
-      // Add the price of the product
-      productPriceLabel.attributedText = ProductAttributedStringHelper
-        .getAttributedPrice(from: productObj, withSize: 34)
+    @IBAction func addToCartButtonAction(_ sender: UIButton) {
+        if let product = productObject {
+            productPageViewControllerDelegate?.didTapAddToCartButtonFromProductPage(for: product)
+        }
     }
-  }
+}
+
+// MARK: - UI Setup
+
+extension ProductPageViewController {
+    
+    func setupNavigationBar() {
+        title = productObject?.name
+    }
   
+    func setupContainerScrollView() {
+        containerScrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 120, right: 0)
+    }
+  
+    func setupUI() {
+        setAddToCartButtonText()
+        setupAddToCartButton(isEnabled: true)
+        styleThumbnailImageView()
+        styleAddToCartButton()
+    }
+    
+    func setAddToCartButtonText() {
+        let addToCartButtonText = NSLocalizedString("Add to Shopping Cart", comment: "Add to Shopping Cart Button label text")
+        attributedCartButtonText = addToCartButtonText.toStyleString(with: 16, and: .semibold)
+    }
+    
+    func setupAddToCartButton(isEnabled: Bool) {
+        let buttonText = isEnabled ? attributedCartButtonText : NSAttributedString(string: "", attributes: nil)
+        addToCartButton.setAttributedTitle(buttonText, for: .normal)
+        addToCartButton.isEnabled = isEnabled
+    }
+    
+    func styleThumbnailImageView() {
+        productImageView.addBorderStyle(borderWidth: 1, borderColor: .imageBorderGray)
+        productImageView.addCornerRadius(5)
+        productImageView.addDropShadow(opacity: 0.23, radius: 6, offset: .zero, lightColor: .gray, darkColor: .white)
+    }
+  
+    func styleAddToCartButton() {
+        addToCartButton.addCornerRadius(25)
+    }
+}
+
+// MARK: - Product Information Loading
+
+extension ProductPageViewController {
+    
+    func loadProductInfo() {
+        loadImage()
+        setupProductInfoLabels()
+    }
+    
+    func loadImage() {
+        guard let product = productObject, let imageURL = ProductInfoHelper.canCreateImageUrl(from: product.imageUrl) else {
+            print("ERROR: Product or image URL is nil")
+            return
+        }
+        
+        imageLoader?.loadImage(imageURL) { result in
+            switch result {
+            case .success(let image):
+                DispatchQueue.main.async {
+                    self.productImageView.image = image
+                }
+            case .failure(let error):
+                print("ERROR: Failed to load image - \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    func setupProductInfoLabels() {
+        guard let product = productObject else { return }
+        productDescriptionLabel.attributedText = ProductAttributedStringHelper.getAttributedDescription(from: product, withSize: 16)
+        productDescriptionLabel.restorationIdentifier = "product_description"
+        productPriceLabel.attributedText = ProductAttributedStringHelper.getAttributedPrice(from: product, withSize: 28)
+        productPriceLabel.restorationIdentifier = "placholer01"
+    }
+}
+
+// MARK: - Beyable SDK Integration
+
+extension ProductPageViewController {
+    
+    func sendProductViewEventToBeyable() {
+        guard let product = productObject else { return }
+        
+        let productBY = BYProductAttributes(
+            reference: product.id,
+            name: product.name,
+            url: product.imageUrl,
+            priceBeforeDiscount: product.price.value ?? 0.0,
+            sellingPrice: product.price.value ?? 0.0,
+            stock: 1,
+            thumbnailUrl: "",
+            tags: ["type:\(product.type ?? "")", "material:\(product.info?.material ?? "")"]
+        )
+        
+        AppDelegate.instance.beyableClient.sendPageview(
+            page: EPageUrlTypeBeyable.PRODUCT,
+            currentView: self.view,
+            attributes: productBY,
+            callback: nil
+        )
+    }
 }

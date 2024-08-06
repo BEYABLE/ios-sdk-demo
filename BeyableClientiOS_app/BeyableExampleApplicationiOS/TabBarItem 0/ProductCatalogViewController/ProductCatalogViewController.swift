@@ -10,7 +10,7 @@
 import UIKit
 import Foundation
 
-import BeyableClient
+import BeyableSDK
 
 class ProductCatalogViewController: UIViewController {
     
@@ -58,7 +58,7 @@ class ProductCatalogViewController: UIViewController {
             "magasin": "Carrefour Market",
             "magasin_size": "1234"
         ]
-        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentView: self.view, attributes: category)
+        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentView: self.view, attributes: category, callback: nil)
         
     }
     
@@ -96,7 +96,6 @@ class ProductCatalogViewController: UIViewController {
 extension ProductCatalogViewController {
     
     func setupNavigationBar() {
-        
         title = collectionName
         navigationController?.navigationBar.topItem?
             .backButtonTitle = backButtonTitle

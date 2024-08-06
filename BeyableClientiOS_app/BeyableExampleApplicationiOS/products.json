@@ -1,199 +1,652 @@
-{ "products": 
-	[
-		{
-			"id": "1",
-			"name":  "Pretty Chair 1",
-			"price": {
-				"value": 49.90,
-				"currency": "€"
-			}, 
-			"info": {
-				"material": "wood with cover",
-				"color": "white"
-			},
-			"type": "chair",
-			"imageUrl": "https://bycrea.picarioxpo.com/Barstol_sammanslagen_sammet_ryggstod.pfs?width=1200&height=1200&cache=default&p.dc=1&format=jpg&p.c=000000%2C0c0c0c%2Cb0815e&p.tn=%2C%2C"
-		},
-		{
-			"id": "2",
-			"name":  "Comfy Couch 1",
-			"price": {
-				"value": 103.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"numberOfSeats": 4,
-				"color": "beige"
-			},
-			"type": "couch",
-			"imageUrl": "https://www.usinebureau.com/images/products/fauteuil_accueil-gasperi-89744.jpg"
-		}, {
-			"id": "3",
-			"name":  "Comfy Couch 2",
-			"price": {
-				"value": 339.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"numberOfSeats": 3,
-				"color": "gray"
-			},
-			"type": "couch",
-			"imageUrl": "https://sweeek.twic.pics/products/43043/original/isof1dkgy-cf0eedc8b0ac2cb2875105b002d68739.jpg?twic=v1/resize=1650x1650/resize=1500/quality=70"
-		},
-		{	
-			"id": "4",
-			"name":  "Comfy Couch 3",
-			"price": {
-				"value": 749.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"numberOfSeats": 2,
-				"color": "black"
-			},
-			"type": "couch",
-			"imageUrl": "https://www.laboutiquedanoise.com/10815-large_default/le-canape-poet-a-ete-presente-a-l-origine-pour-la-propre-maison-de-finn-juhl-.jpg"
-		},
-		{	
-			"id": "5",
-			"name":  "Pretty Chair 2",
-			"price": {
-				"value": 69.20,
-				"currency": "€"
-			}, 
-			"info": {
-				"material": "plastic",
-				"color": "dark blue"
-			},
-			"type": "chair",
-			"imageUrl": "https://furnicher.com/media/catalog/product/cache/3cbce1600ed23a0603a016e904d92b41/b/r/brando_pink_new12_6_.jpg"
-		},
-		{	
-			"id": "6",
-			"name":  "Comfy Couch 4",
-			"price": {
-				"value": 1439.60,
-				"currency": "€"
-			}, 
-			"info": {
-				"numberOfSeats": 5,
-				"color": "black"
-			},
-			"type": "couch",
-			"imageUrl": "https://www.ikea.com/fr/fr/images/products/soederhamn-module-dangle-xl-tonerud-gris__1057831_pe849012_s5.jpg?f=xl"
-		},
-		{	
-			"id": "7",
-			"name":  "Comfy Couch 5",
-			"price": {
-				"value": 199.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"numberOfSeats": 2,
-				"color": "multi"
-			},
-			"type": "couch",
-			"imageUrl": "https://www.inside75.com/contents/refim/-f/fauteuil-convertible-scandinave-cubed-wood-bleu-90cm.jpg"
-		},
-		{	
-			"id": "8",
-			"name":  "Pretty Chair 3",
-			"price": {
-				"value": 49.90,
-				"currency": "€"
-			}, 
-			"info": {
-				"material": "wood and metal",
-				"color": "black"
-			},
-			"type": "chair",
-			"imageUrl": "https://eu.366concept.com/cdn/shop/products/FOXACMR2203NN_1_7c424e21-ed9c-411d-a4d9-4c4369b8a966_1350x1800.jpg?v=1663152112"
-		},
-		{	
-			"id": "9",
-			"name":  "Comfy Couch 6",
-			"price": {
-				"value": 499.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"numberOfSeats": 3,
-				"color": "flanell"
-			},
-			"type": "couch",
-			"imageUrl": "https://sensoo.com/wp-content/uploads/Cosy1_2H_Front_Wembley-anthracite.jpg"
-		},
-		{	
-			"id": "10",
-			"name":  "Pretty Chair 4",
-			"price": {
-				"value": 49.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"material": "wood",
-				"color": "black"
-			},
-			"type": "chair",
-			"imageUrl": "https://objectembassy.com/cdn/shop/products/Natural_Sand_Perspective_PierreJeanneretdesignEasyUpholsteredArmchairObjectEmbassy_1800x1800.jpg?v=1700476701"
-		},
-		{	
-			"id": "11",
-			"name":  "Pretty Chair 5",
-			"price": {
-				"value": 119.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"material": "wood with cover",
-				"color": "black"
-			},
-			"type": "chair",
-			"imageUrl": "https://cdn.webshopapp.com/shops/308545/files/443429922/image.jpg"
-		},
-		{	
-			"id": "12",
-			"name":  "Pretty Chair 6",
-			"price": {
-				"value": 49.90,
-				"currency": "€"
-			}, 
-			"info": {
-				"material": "wood",
-				"color": "wood"
-			},
-			"type": "chair",
-			"imageUrl": "https://pictureserver.net/images/pic/49/fd/undef_src_sa_picid_847148_x_3500_type_whitesh_image.jpg?ver=17"
-		},
-		{	
-			"id": "13",
-			"name":  "Pretty Chair 7",
-			"price": {
-				"value": 39.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"material": "plastic",
-				"color": "white"
-			},
-			"type": "chair",
-			"imageUrl": "https://static.interiors.fr/media/ch3100_402__084404400_1451_07072020.jpg"
-		},
-		{	
-			"id": "14",
-			"name":  "Comfy Couch 7",
-			"price": {
-				"value": 449.50,
-				"currency": "€"
-			}, 
-			"info": {
-				"numberOfSeats": 3,
-				"color": "multi"
-			},
-			"type": "couch",
-			"imageUrl": "https://www.inside75.com/contents/refim/-f/fauteuil-convertible-scandinave-cubed-wood-rouille-90cm.jpg"
-		}
-	]
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Pretty Chair 1",
+      "description": "A stylish and comfortable chair made of wood with a soft cover, perfect for any dining room or office.",
+      "price": {
+        "value": 49.90,
+        "currency": "€"
+      },
+      "info": {
+        "material": "wood with cover",
+        "color": "white",
+        "dimensions": "45x45x90 cm",
+        "weight": "5 kg"
+      },
+      "type": "chair",
+      "imageUrl": "https://bycrea.picarioxpo.com/Barstol_sammanslagen_sammet_ryggstod.pfs?width=1200&height=1200&cache=default&p.dc=1&format=jpg&p.c=000000%2C0c0c0c%2Cb0815e&p.tn=%2C%2C",
+      "isFavorite": true,
+      "rating": 4.5,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "Alice92",
+          "comment": "Très confortable et facile à monter. Idéal pour mon bureau.",
+          "rating": 5
+        },
+        {
+          "username": "JeanPhilippe",
+          "comment": "Bon produit, mais un peu cher pour ce que c'est.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Comfy Couch 1",
+      "description": "A spacious 4-seater couch in a cozy beige fabric, ideal for family gatherings or relaxing evenings.",
+      "price": {
+        "value": 103.50,
+        "currency": "€"
+      },
+      "info": {
+        "numberOfSeats": 4,
+        "color": "beige",
+        "dimensions": "200x90x85 cm",
+        "weight": "35 kg"
+      },
+      "type": "couch",
+      "imageUrl": "https://www.usinebureau.com/images/products/fauteuil_accueil-gasperi-89744.jpg",
+      "isFavorite": false,
+      "rating": 4.2,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "Marie78",
+          "comment": "Super canapé, très confortable et spacieux. Le tissu est agréable au toucher.",
+          "rating": 4
+        },
+        {
+          "username": "AntoineParis",
+          "comment": "Bon rapport qualité/prix, mais la couleur est un peu plus foncée que sur les photos.",
+          "rating": 4
+        },
+        {
+          "username": "Victor59",
+          "comment": "Je recommande ! Parfait pour les soirées en famille.",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Comfy Couch 2",
+      "description": "A modern 3-seater couch in gray, combining style with comfort for a contemporary living room.",
+      "price": {
+        "value": 339.50,
+        "currency": "€"
+      },
+      "info": {
+        "numberOfSeats": 3,
+        "color": "gray",
+        "dimensions": "180x85x80 cm",
+        "weight": "32 kg"
+      },
+      "type": "couch",
+      "imageUrl": "https://sweeek.twic.pics/products/43043/original/isof1dkgy-cf0eedc8b0ac2cb2875105b002d68739.jpg?twic=v1/resize=1650x1650/resize=1500/quality=70",
+      "isFavorite": false,
+      "rating": 4.0,
+      "availability": "limited stock",
+      "userReviews": [
+        {
+          "username": "ChloeLux",
+          "comment": "Très beau canapé, mais la livraison a pris plus de temps que prévu.",
+          "rating": 4
+        },
+        {
+          "username": "MaxDu93",
+          "comment": "Bon design, mais pas aussi confortable que je l'espérais.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Comfy Couch 3",
+      "description": "A sleek black 2-seater couch, perfect for a small living space or a stylish studio.",
+      "price": {
+        "value": 749.50,
+        "currency": "€"
+      },
+      "info": {
+        "numberOfSeats": 2,
+        "color": "black",
+        "dimensions": "160x80x75 cm",
+        "weight": "28 kg"
+      },
+      "type": "couch",
+      "imageUrl": "https://www.laboutiquedanoise.com/10815-large_default/le-canape-poet-a-ete-presente-a-l-origine-pour-la-propre-maison-de-finn-juhl-.jpg",
+      "isFavorite": true,
+      "rating": 4.8,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "Lucie94",
+          "comment": "Magnifique canapé, qualité exceptionnelle !",
+          "rating": 5
+        },
+        {
+          "username": "HenriToulouse",
+          "comment": "Un peu cher, mais on en a pour son argent.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Pretty Chair 2",
+      "description": "A dark blue plastic chair with a minimalist design, suitable for both indoor and outdoor use.",
+      "price": {
+        "value": 69.20,
+        "currency": "€"
+      },
+      "info": {
+        "material": "plastic",
+        "color": "dark blue",
+        "dimensions": "43x43x85 cm",
+        "weight": "4 kg"
+      },
+      "type": "chair",
+      "imageUrl": "https://furnicher.com/media/catalog/product/cache/3cbce1600ed23a0603a016e904d92b41/b/r/brando_pink_new12_6_.jpg",
+      "isFavorite": false,
+      "rating": 3.8,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "David75015",
+          "comment": "Design sympa, mais la qualité pourrait être meilleure.",
+          "rating": 3
+        },
+        {
+          "username": "SophieBdx",
+          "comment": "Parfait pour mon balcon, très légère.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Comfy Couch 4",
+      "description": "A luxurious 5-seater couch in black, providing ample space and comfort for large families.",
+      "price": {
+        "value": 1439.60,
+        "currency": "€"
+      },
+      "info": {
+        "numberOfSeats": 5,
+        "color": "black",
+        "dimensions": "250x95x85 cm",
+        "weight": "50 kg"
+      },
+      "type": "couch",
+      "imageUrl": "https://www.ikea.com/fr/fr/images/products/soederhamn-module-dangle-xl-tonerud-gris__1057831_pe849012_s5.jpg?f=xl",
+      "isFavorite": false,
+      "rating": 4.7,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "EmmaParis",
+          "comment": "Canapé spacieux et très confortable. Un peu difficile à assembler, mais le résultat en vaut la peine.",
+          "rating": 5
+        },
+        {
+          "username": "MarcLille",
+          "comment": "Excellent produit, très confortable, mais un peu lourd.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Comfy Couch 5",
+      "description": "A vibrant 2-seater couch with a multi-color design, adding a pop of color to any living space.",
+      "price": {
+        "value": 199.50,
+        "currency": "€"
+      },
+      "info": {
+        "numberOfSeats": 2,
+        "color": "multi",
+        "dimensions": "150x75x80 cm",
+        "weight": "26 kg"
+      },
+      "type": "couch",
+      "imageUrl": "https://www.inside75.com/contents/refim/-f/fauteuil-convertible-scandinave-cubed-wood-bleu-90cm.jpg",
+      "isFavorite": false,
+      "rating": 3.9,
+      "availability": "limited stock",
+      "userReviews": [
+        {
+          "username": "JulieAnnecy",
+          "comment": "Couleurs vives et design original, mais la qualité du tissu pourrait être meilleure.",
+          "rating": 4
+        },
+        {
+          "username": "Romain92",
+          "comment": "Bon canapé pour le prix, mais les coussins sont un peu durs.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Pretty Chair 3",
+      "description": "A sturdy chair made from a combination of wood and metal, perfect for industrial-style interiors.",
+      "price": {
+        "value": 49.90,
+        "currency": "€"
+      },
+      "info": {
+        "material": "wood and metal",
+        "color": "black",
+        "dimensions": "47x47x90 cm",
+        "weight": "7 kg"
+      },
+      "type": "chair",
+      "imageUrl": "https://eu.366concept.com/cdn/shop/products/FOXACMR2203NN_1_7c424e21-ed9c-411d-a4d9-4c4369b8a966_1350x1800.jpg?v=1663152112",
+      "isFavorite": true,
+      "rating": 4.6,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "ClaireRennes",
+          "comment": "Très bonne qualité, parfaite pour mon salon.",
+          "rating": 5
+        },
+        {
+          "username": "Lucas06",
+          "comment": "Bonne chaise, mais un peu lourde à déplacer.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Comfy Couch 6",
+      "description": "A 3-seater couch in a soft flannel fabric, perfect for cozy evenings and relaxation.",
+      "price": {
+        "value": 499.50,
+        "currency": "€"
+      },
+      "info": {
+        "numberOfSeats": 3,
+        "color": "flanell",
+        "dimensions": "185x85x80 cm",
+        "weight": "34 kg"
+      },
+      "type": "couch",
+      "imageUrl": "https://sensoo.com/wp-content/uploads/Cosy1_2H_Front_Wembley-anthracite.jpg",
+      "isFavorite": false,
+      "rating": 4.3,
+      "availability": "limited stock",
+      "userReviews": [
+        {
+          "username": "HugoToulon",
+          "comment": "Très doux et confortable, parfait pour les soirées cocooning.",
+          "rating": 4
+        },
+        {
+          "username": "SophieBrest",
+          "comment": "Le tissu est agréable mais il attire facilement la poussière.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Pretty Chair 4",
+      "description": "A simple yet elegant wooden chair, suitable for any dining room or kitchen.",
+      "price": {
+        "value": 49.50,
+        "currency": "€"
+      },
+      "info": {
+        "material": "wood",
+        "color": "black",
+        "dimensions": "45x45x90 cm",
+        "weight": "5 kg"
+      },
+      "type": "chair",
+      "imageUrl": "https://objectembassy.com/cdn/shop/products/Natural_Sand_Perspective_PierreJeanneretdesignEasyUpholsteredArmchairObjectEmbassy_1800x1800.jpg?v=1700476701",
+      "isFavorite": true,
+      "rating": 4.7,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "MathildeDijon",
+          "comment": "Chaise très élégante, elle se marie bien avec ma table en bois.",
+          "rating": 5
+        },
+        {
+          "username": "Pauline92",
+          "comment": "Très jolie, mais le bois est un peu fragile.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "Pretty Chair 5",
+      "description": "A premium wooden chair with a soft cover, offering both comfort and style for upscale interiors.",
+      "price": {
+        "value": 119.50,
+        "currency": "€"
+      },
+      "info": {
+        "material": "wood with cover",
+        "color": "black",
+        "dimensions": "48x48x95 cm",
+        "weight": "6 kg"
+      },
+      "type": "chair",
+      "imageUrl": "https://cdn.webshopapp.com/shops/308545/files/443429922/image.jpg",
+      "isFavorite": false,
+      "rating": 4.4,
+      "availability": "limited stock",
+      "userReviews": [
+        {
+          "username": "TomParis",
+          "comment": "Très confortable, parfait pour de longues discussions autour de la table.",
+          "rating": 5
+        },
+        {
+          "username": "NinaBordeaux",
+          "comment": "Très belle, mais un peu chère.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Pretty Chair 6",
+      "description": "A natural wood chair, bringing a touch of rustic charm to any home.",
+      "price": {
+        "value": 49.90,
+        "currency": "€"
+      },
+      "info": {
+        "material": "wood",
+        "color": "wood",
+        "dimensions": "46x46x88 cm",
+        "weight": "5 kg"
+      },
+      "type": "chair",
+      "imageUrl": "https://pictureserver.net/images/pic/49/fd/undef_src_sa_picid_847148_x_3500_type_whitesh_image.jpg?ver=17",
+      "isFavorite": false,
+      "rating": 4.2,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "CamilleLyon",
+          "comment": "Très jolie, mais il faut faire attention aux rayures.",
+          "rating": 4
+        },
+        {
+          "username": "JulesStrasbourg",
+          "comment": "Parfait pour mon salon, un style rustique que j'adore.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Pretty Chair 7",
+      "description": "A simple white plastic chair, perfect for outdoor events or casual dining areas.",
+      "price": {
+        "value": 39.50,
+        "currency": "€"
+      },
+      "info": {
+        "material": "plastic",
+        "color": "white",
+        "dimensions": "44x44x86 cm",
+        "weight": "4 kg"
+      },
+      "type": "chair",
+      "imageUrl": "https://static.interiors.fr/media/ch3100_402__084404400_1451_07072020.jpg",
+      "isFavorite": false,
+      "rating": 3.7,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "TheoMarseille",
+          "comment": "Très pratique pour les repas en extérieur, légère et facile à nettoyer.",
+          "rating": 4
+        },
+        {
+          "username": "LauraNice",
+          "comment": "Pas très solide, mais pour le prix, c'est correct.",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Comfy Couch 7",
+      "description": "A versatile 3-seater couch in dark brown leather, offering both luxury and durability.",
+      "price": {
+        "value": 599.90,
+        "currency": "€"
+      },
+      "info": {
+        "numberOfSeats": 3,
+        "color": "dark brown",
+        "dimensions": "190x85x85 cm",
+        "weight": "42 kg"
+      },
+      "type": "couch",
+      "imageUrl": "https://www.digsdigs.com/photos/leather-sofa-design-ideas-5-554x400.jpg",
+      "isFavorite": false,
+      "rating": 4.5,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "EricLyon",
+          "comment": "Canapé très confortable et le cuir est de bonne qualité. Je recommande.",
+          "rating": 5
+        },
+        {
+          "username": "SandrineToulouse",
+          "comment": "Bon produit, mais nécessite un entretien régulier du cuir.",
+          "rating": 4
+        }
+      ]
+    },    
+    {
+      "id": "15",
+      "name": "Elegant Dining Table",
+      "description": "A large wooden dining table, perfect for family meals or gatherings with friends. Seats up to 6 people comfortably.",
+      "price": {
+        "value": 349.90,
+        "currency": "€"
+      },
+      "info": {
+        "material": "solid oak wood",
+        "color": "natural wood",
+        "dimensions": "200x100x75 cm",
+        "weight": "40 kg"
+      },
+      "type": "table",
+      "imageUrl": "https://www.maisonsdumonde.com/INTL/p/large-table-a-manger-en-chene-6-8-personnes-l200-jack-219508_4.jpg",
+      "isFavorite": true,
+      "rating": 4.7,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "PierreDijon",
+          "comment": "Superbe table, très solide et bien finie.",
+          "rating": 5
+        },
+        {
+          "username": "MarieToulouse",
+          "comment": "Très belle table, mais un peu lourde à déplacer.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Modern Coffee Table",
+      "description": "A sleek glass and metal coffee table that adds a modern touch to your living room.",
+      "price": {
+        "value": 129.50,
+        "currency": "€"
+      },
+      "info": {
+        "material": "tempered glass and steel",
+        "color": "black",
+        "dimensions": "120x60x45 cm",
+        "weight": "15 kg"
+      },
+      "type": "table",
+      "imageUrl": "https://www.ikea.com/au/en/images/products/kragsta-coffee-table-black__0710574_pe727759_s5.jpg",
+      "isFavorite": false,
+      "rating": 4.3,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "SophieNice",
+          "comment": "Table très élégante, facile à nettoyer.",
+          "rating": 5
+        },
+        {
+          "username": "AlexParis",
+          "comment": "Le verre est un peu fragile, mais l'ensemble est très joli.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Rustic Side Table",
+      "description": "A charming wooden side table that fits perfectly in a rustic or vintage-themed interior.",
+      "price": {
+        "value": 89.90,
+        "currency": "€"
+      },
+      "info": {
+        "material": "reclaimed wood",
+        "color": "brown",
+        "dimensions": "50x50x55 cm",
+        "weight": "8 kg"
+      },
+      "type": "table",
+      "imageUrl": "https://cdn.laredoute.com/products/f/4/0/afcdf12a5ed3b92a42a8a308b169f594.jpg",
+      "isFavorite": true,
+      "rating": 4.8,
+      "availability": "limited stock",
+      "userReviews": [
+        {
+          "username": "ClaireLyon",
+          "comment": "J'adore cette petite table, elle apporte un vrai charme à mon salon.",
+          "rating": 5
+        },
+        {
+          "username": "JeanRennes",
+          "comment": "Belle table, mais un peu petite pour ce prix.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Elegant Floor Lamp",
+      "description": "A tall floor lamp with a minimalist design, ideal for lighting up a corner of your living room or bedroom.",
+      "price": {
+        "value": 119.90,
+        "currency": "€"
+      },
+      "info": {
+        "material": "metal and fabric",
+        "color": "black and white",
+        "dimensions": "160 cm height",
+        "weight": "6 kg",
+        "bulbType": "E27, max 60W"
+      },
+      "type": "lamp",
+      "imageUrl": "https://www.luminaires-online.fr/2123-large_default/lampadaire-slim-noir-or-h-160-cm-design-elegant.jpg",
+      "isFavorite": false,
+      "rating": 4.4,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "JulietteMarseille",
+          "comment": "Très belle lampe, diffuse une lumière douce et agréable.",
+          "rating": 5
+        },
+        {
+          "username": "PaulBordeaux",
+          "comment": "Design élégant, mais un peu chère pour une lampe.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "Vintage Desk Lamp",
+      "description": "A small desk lamp with a vintage look, perfect for adding a touch of retro style to your workspace.",
+      "price": {
+        "value": 49.90,
+        "currency": "€"
+      },
+      "info": {
+        "material": "brass and glass",
+        "color": "antique brass",
+        "dimensions": "45 cm height",
+        "weight": "2 kg",
+        "bulbType": "E14, max 40W"
+      },
+      "type": "lamp",
+      "imageUrl": "https://cdn11.bigcommerce.com/s-f19e7/images/stencil/1280x1280/products/1032/1890/Retro_Deluxe_Mid-Century_Modern_Vintage_Soft_Brass_Gold_Desk_Lamp_Antique__49197.1491783601.jpg?c=2?imbypass=on",
+      "isFavorite": true,
+      "rating": 4.6,
+      "availability": "limited stock",
+      "userReviews": [
+        {
+          "username": "MireilleNantes",
+          "comment": "Magnifique lampe, parfaite pour mon bureau.",
+          "rating": 5
+        },
+        {
+          "username": "OlivierParis",
+          "comment": "Donne un bel effet rétro, mais la lumière est un peu faible.",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Contemporary Pendant Lamp",
+      "description": "A modern pendant lamp with an adjustable height, ideal for dining areas or kitchen islands.",
+      "price": {
+        "value": 139.50,
+        "currency": "€"
+      },
+      "info": {
+        "material": "metal and glass",
+        "color": "matte black and clear glass",
+        "dimensions": "adjustable height up to 120 cm",
+        "weight": "4 kg",
+        "bulbType": "E27, max 60W"
+      },
+      "type": "lamp",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0016/9549/2010/products/WMDT.jpg?v=1618961833",
+      "isFavorite": false,
+      "rating": 4.5,
+      "availability": "in stock",
+      "userReviews": [
+        {
+          "username": "AmelieRouen",
+          "comment": "Superbe lampe, elle attire tous les regards dans ma cuisine.",
+          "rating": 5
+        },
+        {
+          "username": "LucasGrenoble",
+          "comment": "Belle lampe, mais un peu difficile à installer.",
+          "rating": 4
+        }
+      ]
+    }
+  ]
 }

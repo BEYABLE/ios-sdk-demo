@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import BeyableClient
+import BeyableSDK
 
 class RootViewController: UIViewController {
     override func viewDidLoad() {

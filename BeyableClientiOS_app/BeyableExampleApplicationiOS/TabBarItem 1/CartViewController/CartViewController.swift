@@ -11,9 +11,9 @@ import UIKit
 import UserNotifications
 import CoreData
 
-import BeyableClient
+import BeyableSDK
 
-class CartViewController: UIViewController {
+class CartViewController: UIViewController, OnSendPageView {
     
     
     // MARK: - Properties
@@ -73,11 +73,21 @@ class CartViewController: UIViewController {
         
         // Shopping Cart update observer
         setupCartUpdateOberserver()
+        
+        let totalPriceAmount = coreDataService
+            .getShoppingCartTotalAmount()
+
+        let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
+        AppDelegate.instance.beyableClient.sendPageview(
+            page: EPageUrlTypeBeyable.CART,
+            currentView: self.view,
+            attributes: BYCartAttributes(tags: ["totalPriceAmount:\(totalPriceAmount)"]),
+            cartInfos: byCartInfos,
+            callback: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         /*
          If the items in the Shopping Cart have been updated from
          another ViewController, then reload the UI
@@ -87,13 +97,16 @@ class CartViewController: UIViewController {
             setupTotalPriceLabel()
             shoppingCartTableView.reloadData()
         }
-        let totalPriceAmount = coreDataService
-            .getShoppingCartTotalAmount()
-        
-        let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
-        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CART, currentView: self.view,  attributes: BYCartAttributes(tags: ["totalPriceAmount:\(totalPriceAmount)"]), cartInfos: byCartInfos)
     }
     
+    func onBYSuccess() {
+        
+        shoppingCartTableView.reloadData()
+    }
+     
+     func onBYError() {
+         print("Failed to send page view")
+     }
     
     // MARK: - View transition
     
@@ -269,15 +282,13 @@ extension CartViewController {
 
 
 extension CartViewController {
+    
     func getCartByInfos(shoppingCartProducts : [ShoppingCartProduct]) -> BYCartInfos{
         var items = [BYCartItemInfos]()
         for cartProduit in shoppingCartProducts {
-            
             items.append(BYCartItemInfos(productReference: cartProduit.id, productName: cartProduit.name, productUrl: cartProduit.imgUrl, productPrice: cartProduit.price, quantity: 1, thumbnailUrl: "", tags: []))
         }
-        
         return BYCartInfos(items: items)
-        
     }
 }
 

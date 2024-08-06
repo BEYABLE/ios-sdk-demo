@@ -7,54 +7,43 @@
  */
 
 import UIKit
-import BeyableClient
+import BeyableSDK
 
 
 class ProductOverviewViewController: UIViewController {
-
   
-  // MARK: - Properties
-  
-  var screenTitle = "Categories"
-  
-  // Delegate
-  weak var productOverviewViewControllerDelegate: ProductOverviewViewControllerDelegate?
-  
-  // Segue Identifiers
-  let productCatalogSegue = "ProductCatalogViewControllerSegue"
-  
-  // Collection View
-  @IBOutlet weak var productCollectionsList: UICollectionView!
-  let productCollectionCellID = "ProductCollectionCell"
-  
-  // Products Data
-  var productCollections: [ProductCollection] = []
-  var userTappedProductCollection: [Product] = []
-  var userTappedProductCollectionName = ""
-  
-  // Image Loader
-  var imageLoader: ImageDownloader?
+    // MARK: - Properties
+    let screenTitle = "UIKit"
+    // Delegate
+    weak var productOverviewViewControllerDelegate: ProductOverviewViewControllerDelegate?
+    // Segue Identifiers
+    let productCatalogSegue = "ProductCatalogViewControllerSegue"
+    // Collection View
+    @IBOutlet weak var productCollectionsList: UICollectionView!
+    let productCollectionCellID = "ProductCollectionCell"
+    // Products Data
+    var productCollections: [ProductCollection] = []
+    var userTappedProductCollection: [Product] = []
+    var userTappedProductCollectionName = ""
+    // Image Loader
+    var imageLoader: ImageDownloader?
   
   
-  // MARK: - View Controller's Life Cycle
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-      self.title = screenTitle
-    // NavigationBar
-    setupNavigationBar()
-
-    // Product Collections CollectionView setup
-    ObjectCollectionHelper.setupCollectionView(
-      productCollectionCellID,
-      for: productCollectionsList, in: self)
+    // MARK: - View Controller's Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // NavigationBar
+        setupNavigationBar()
+        // Product Collections CollectionView setup
+        ObjectCollectionHelper.setupCollectionView(
+            productCollectionCellID,
+            for: productCollectionsList, in: self)
     
-      
-      let homePage = BYHomeAttributes(tags: ["screenTitle : \(self.screenTitle)", "numberCategory : \(self.productCollections.count)"])
-      
-      AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentView: self.view, attributes: homePage)
-        
-  }
+        // Création des attributs pour le SDK Beyable
+        let homePage = BYHomeAttributes(tags: ["screenTitle : \(screenTitle)", "numberCategory : \(self.productCollections.count)"])
+        // Envoi de sendPageView au SDK Beyable
+        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentView: self.view, attributes: homePage, callback: nil)
+    }
   
   
   // MARK: - View transition
@@ -80,7 +69,6 @@ class ProductOverviewViewController: UIViewController {
     
     // Pass data to ProductCatalogViewController
     if segue.identifier == productCatalogSegue {
-      
       let viewController = segue.destination as! ProductCatalogViewController
       viewController.productList = userTappedProductCollection
       viewController.collectionName = userTappedProductCollectionName
@@ -98,6 +86,7 @@ class ProductOverviewViewController: UIViewController {
 extension ProductOverviewViewController {
   
   func setupNavigationBar() {
+      title = "UIKit"
   }
   
 }
