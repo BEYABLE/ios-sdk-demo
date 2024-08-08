@@ -121,9 +121,9 @@ extension ProductPageViewController {
     func setupProductInfoLabels() {
         guard let product = productObject else { return }
         productDescriptionLabel.attributedText = ProductAttributedStringHelper.getAttributedDescription(from: product, withSize: 16)
-        productDescriptionLabel.restorationIdentifier = "product_description"
+       // productDescriptionLabel.restorationIdentifier = "product_description"
         productPriceLabel.attributedText = ProductAttributedStringHelper.getAttributedPrice(from: product, withSize: 28)
-        productPriceLabel.restorationIdentifier = "placholer01"
+        //productPriceLabel.restorationIdentifier = "placholer01"
     }
 }
 
@@ -146,6 +146,7 @@ extension ProductPageViewController {
         )
         
         AppDelegate.instance.beyableClient.sendPageview(
+            url: "/prodcut_detail_uikit_\(product.id)",
             page: EPageUrlTypeBeyable.PRODUCT,
             currentView: self.view,
             attributes: productBY,

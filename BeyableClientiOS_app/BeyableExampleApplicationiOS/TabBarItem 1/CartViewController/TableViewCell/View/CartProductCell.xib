@@ -31,8 +31,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZz-At-RsE">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" restorationIdentifier="cart_product_image" translatesAutoresizingMaskIntoConstraints="NO" id="xNN-OK-2il">
-                                                <rect key="frame" x="8" y="8" width="98" height="98"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" placeholderIntrinsicWidth="100" placeholderIntrinsicHeight="100" restorationIdentifier="cart_product_image" translatesAutoresizingMaskIntoConstraints="NO" id="xNN-OK-2il">
+                                                <rect key="frame" x="8" y="8" width="100" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="xNN-OK-2il" secondAttribute="height" multiplier="1:1" id="PBc-d8-ohU"/>
                                                 </constraints>
@@ -49,12 +49,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5v-rM-mVt">
                                         <rect key="frame" x="114" y="0.0" width="370" height="114"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="cart_product_title" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SR-xF-cAr">
-                                                <rect key="frame" x="4" y="27" width="43.333333333333343" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRW-Rn-d7f">
                                                 <rect key="frame" x="335.66666666666669" y="5" width="30.333333333333314" height="22"/>
                                                 <constraints>
@@ -72,7 +66,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrQ-IM-OgV">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrQ-IM-OgV">
                                                 <rect key="frame" x="4" y="65.666666666666671" width="86.666666666666671" height="40.333333333333329"/>
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -81,27 +75,39 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zqE-hg-b7J">
-                                                <rect key="frame" x="62.33333333333335" y="81" width="20.333333333333336" height="10.333333333333329"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="chevron.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zqE-hg-b7J">
+                                                <rect key="frame" x="62.333333333333343" y="81" width="20.333333333333343" height="10.333333333333329"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="zqE-hg-b7J" secondAttribute="height" multiplier="1:1" id="D01-AR-Meg"/>
                                                 </constraints>
                                             </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D8t-aP-Kfd">
+                                                <rect key="frame" x="4" y="5" width="43.333333333333336" height="40.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cart_product_title" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SR-xF-cAr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="43.333333333333336" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Snf-MO-RGM" userLabel="DEscription">
+                                                        <rect key="frame" x="0.0" y="20.333333333333336" width="43.333333333333336" height="20.333333333333336"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="jrQ-IM-OgV" firstAttribute="leading" secondItem="8SR-xF-cAr" secondAttribute="leading" id="0t0-tL-oHE"/>
                                             <constraint firstAttribute="trailing" secondItem="CRW-Rn-d7f" secondAttribute="trailing" constant="4" id="38C-Jn-M1Q"/>
                                             <constraint firstItem="zqE-hg-b7J" firstAttribute="trailing" secondItem="jrQ-IM-OgV" secondAttribute="trailing" constant="-8" id="3a7-TW-yI4"/>
                                             <constraint firstItem="zqE-hg-b7J" firstAttribute="top" secondItem="jrQ-IM-OgV" secondAttribute="top" constant="10" id="5An-go-yh1"/>
-                                            <constraint firstItem="jrQ-IM-OgV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="8SR-xF-cAr" secondAttribute="bottom" constant="8" id="7Y7-1Y-Z5W"/>
                                             <constraint firstItem="zqE-hg-b7J" firstAttribute="bottom" secondItem="jrQ-IM-OgV" secondAttribute="bottom" constant="-10" id="9TB-LM-bAm"/>
-                                            <constraint firstItem="CRW-Rn-d7f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8SR-xF-cAr" secondAttribute="trailing" constant="4" id="Bhs-U1-CTb"/>
                                             <constraint firstAttribute="bottom" secondItem="iJc-QT-74U" secondAttribute="bottom" constant="8" id="KiR-6m-Nfa"/>
                                             <constraint firstItem="CRW-Rn-d7f" firstAttribute="top" secondItem="C5v-rM-mVt" secondAttribute="top" constant="5" id="ZxZ-15-7ru"/>
-                                            <constraint firstItem="8SR-xF-cAr" firstAttribute="leading" secondItem="C5v-rM-mVt" secondAttribute="leading" constant="4" id="f2L-4Y-0SD"/>
-                                            <constraint firstItem="8SR-xF-cAr" firstAttribute="top" secondItem="C5v-rM-mVt" secondAttribute="top" constant="24" id="pTl-jI-7Hf"/>
                                             <constraint firstAttribute="trailing" secondItem="iJc-QT-74U" secondAttribute="trailing" constant="8" id="zkE-81-Vnc"/>
                                         </constraints>
                                     </view>

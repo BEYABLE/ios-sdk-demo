@@ -102,8 +102,7 @@ extension ProductCatalogViewController: UICollectionViewDelegate, UICollectionVi
   
   
   // MARK: - Animate cell being tapped
-  func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-    
+  func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {    
     let cell = collectionView.cellForItem(at: indexPath)
     ObjectCollectionHelper.highlightCellOnTap(for: cell!)
     return true

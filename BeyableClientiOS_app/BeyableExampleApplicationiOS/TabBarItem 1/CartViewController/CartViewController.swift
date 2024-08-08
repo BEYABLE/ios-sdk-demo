@@ -17,6 +17,7 @@ class CartViewController: UIViewController, OnSendPageView {
     
     
     // MARK: - Properties
+    weak var productPageViewControllerDelegate: ProductPageViewControllerDelegate?
     
     // Core Data
     var coreDataService: CoreDataService!
@@ -26,6 +27,7 @@ class CartViewController: UIViewController, OnSendPageView {
     weak var cartViewControllerDelegate: CartViewControllerDelegate?
     
     // Observer Name
+    let productPageViewControllerSegue = "ProductPageViewControllerSegue"
     let updateShoppingCartObserverName = "updateShoppingCartObserver"
     var reloadShoppingTableView = false
     
@@ -47,6 +49,8 @@ class CartViewController: UIViewController, OnSendPageView {
     // Change Product Quantity
     var quantityPickerView: QuantityPickerView?
     var changedQuantityOnCellIndexPath: IndexPath?
+    
+    var userTappedProductObj: Product?
     
     
     // MARK: - View Controller's Life Cycle
@@ -79,6 +83,7 @@ class CartViewController: UIViewController, OnSendPageView {
 
         let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
         AppDelegate.instance.beyableClient.sendPageview(
+            url: "/cart",
             page: EPageUrlTypeBeyable.CART,
             currentView: self.view,
             attributes: BYCartAttributes(tags: ["totalPriceAmount:\(totalPriceAmount)"]),
@@ -100,7 +105,6 @@ class CartViewController: UIViewController, OnSendPageView {
     }
     
     func onBYSuccess() {
-        
         shoppingCartTableView.reloadData()
     }
      
@@ -119,6 +123,15 @@ class CartViewController: UIViewController, OnSendPageView {
          */
         coordinator.animate { (_) in
             self.navigationController?.navigationBar.sizeToFit()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Pass data for a product to ProductPageViewController
+        if segue.identifier == productPageViewControllerSegue {
+            let viewController = segue.destination as! ProductPageViewController
+            viewController.productObject = userTappedProductObj
+            viewController.imageLoader = imageLoader
         }
     }
     

@@ -25,12 +25,20 @@ struct ProductsCollectionPageView: View, OnSendPageView {
             .navigationTitle("SwiftUI Collection")
         }
         .onAppear() {
+            var category = BYCategoryAttributes(
+                CategoryId: "", 
+                CategoryName: "all",
+                tags: ["Number_Product:\(products.count)"])
+            category.contextData = [
+                "magasin": "Carrefour Market",
+                "magasin_size": "1234"
+            ]
             // Send page to Beyable
              AppDelegate.instance.beyableClient.sendPageview(
-                page: EPageUrlTypeBeyable.CART,
+                url: "/products_collection_swiftui",
+                page: EPageUrlTypeBeyable.CATEGORY,
                 currentView: self,
-                attributes: BYCartAttributes(tags: []),
-                cartInfos: BYCartInfos(items: []),
+                attributes: category,
                 callback: self)
         }
     }

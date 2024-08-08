@@ -53,12 +53,17 @@ class ProductCatalogViewController: UIViewController {
             productCellID,
             for: productCatalogCollectionView, in: self)
         
-        var category = BYCategoryAttributes(CategoryId: "", CategoryName: collectionName, tags: ["Number_Product:\(productList.count)", "backButtonTitle: \(backButtonTitle)"])
+        var category = BYCategoryAttributes(
+            CategoryId: "", CategoryName: collectionName, tags: ["Number_Product:\(productList.count)", "backButtonTitle: \(backButtonTitle)"])
         category.contextData = [
             "magasin": "Carrefour Market",
             "magasin_size": "1234"
         ]
-        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.CATEGORY, currentView: self.view, attributes: category, callback: nil)
+        AppDelegate.instance.beyableClient.sendPageview(
+            url: "/products_collection_uikit",
+            page: EPageUrlTypeBeyable.CATEGORY,
+            currentView: self.view,
+            attributes: category, callback: nil)
         
     }
     

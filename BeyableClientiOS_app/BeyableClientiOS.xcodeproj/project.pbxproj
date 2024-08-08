@@ -87,6 +87,7 @@
 		66F784652C591F70004D818D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784642C591F70004D818D /* Color.swift */; };
 		66F784672C591F98004D818D /* CustomerRatingRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784662C591F98004D818D /* CustomerRatingRepresentable.swift */; };
 		66F784692C591FCA004D818D /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F784682C591FCA004D818D /* CartButton.swift */; };
+		66FE2EC92C661FAD0023940B /* ProductCartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FE2EC82C661FAD0023940B /* ProductCartCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +177,7 @@
 		66F784642C591F70004D818D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		66F784662C591F98004D818D /* CustomerRatingRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerRatingRepresentable.swift; sourceTree = "<group>"; };
 		66F784682C591FCA004D818D /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		66FE2EC82C661FAD0023940B /* ProductCartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCartCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,6 +410,7 @@
 				52A3854C2B74F8DF00A90F21 /* CartProductCell.swift */,
 				52A3854D2B74F8DF00A90F21 /* View */,
 				52A3854F2B74F8DF00A90F21 /* Delegates */,
+				66FE2EC82C661FAD0023940B /* ProductCartCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -739,6 +742,7 @@
 				66F7845D2C591F1D004D818D /* Icon.swift in Sources */,
 				52D3FAFA2B7A6F1E008D813C /* CartVcPickerViewDelegate.swift in Sources */,
 				66F7845A2C58EE3F004D818D /* ProductDetailView.swift in Sources */,
+				66FE2EC92C661FAD0023940B /* ProductCartCell.swift in Sources */,
 				52D3FAFB2B7A6F1E008D813C /* CartViewControllerDelegate.swift in Sources */,
 				66F7845F2C591F30004D818D /* Typography.swift in Sources */,
 				52D3FAFC2B7A6F1E008D813C /* CartVcTableViewDelegate.swift in Sources */,

@@ -38,11 +38,17 @@ class ProductOverviewViewController: UIViewController {
         ObjectCollectionHelper.setupCollectionView(
             productCollectionCellID,
             for: productCollectionsList, in: self)
-    
+     
         // Création des attributs pour le SDK Beyable
         let homePage = BYHomeAttributes(tags: ["screenTitle : \(screenTitle)", "numberCategory : \(self.productCollections.count)"])
+        
         // Envoi de sendPageView au SDK Beyable
-        AppDelegate.instance.beyableClient.sendPageview(page: EPageUrlTypeBeyable.HOME, currentView: self.view, attributes: homePage, callback: nil)
+        AppDelegate.instance.beyableClient.sendPageview(
+            url: "/home",
+            page: EPageUrlTypeBeyable.HOME, 
+            currentView: self.view,
+            attributes: homePage,
+            callback: nil)
     }
   
   

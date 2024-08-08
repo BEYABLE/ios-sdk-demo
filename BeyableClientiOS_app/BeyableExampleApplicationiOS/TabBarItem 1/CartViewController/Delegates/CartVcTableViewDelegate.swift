@@ -21,14 +21,12 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource, OnCtaD
         return 1
     }
   
-  
     // MARK: - Items in section
     // All products in the Shopping Cart in 1 section
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return shoppingCartProducts.count
     }
-  
   
     
     // MARK: - cellForRowAt
@@ -92,14 +90,14 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource, OnCtaD
         // Product to load in the current cell
         let product = shoppingCartProducts[index]
         // Send the cell to the BeyableSDK
-        AppDelegate.instance.beyableClient.sendCellBinded(cell: cell, elemementId: product.name!, callback: self)
+        AppDelegate.instance.beyableClient.sendCellBinded(url: "/cart", cell: cell, elementId: product.name!, callback: self)
     }
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // Réinitialisez l'état de la cellule lorsqu'elle est retirée de l'écran
         let index = indexPath.row
         let product = shoppingCartProducts[index]
-        AppDelegate.instance.beyableClient.sendCellUnbinded(cell: cell, elemementId: product.name!)
+        AppDelegate.instance.beyableClient.sendCellUnbinded(url: "/cart", cell: cell, elementId: product.name!)
     }
     
     func onBYClick(cellId: String, value: String) {
@@ -131,7 +129,27 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource, OnCtaD
     // Set the cell's height
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150.0
+        return UITableView.automaticDimension
     }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 500
+    }
+    
+    
+    // MARK: - Cell was tapped
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cartProduct = shoppingCartProducts[indexPath.row]
+        userTappedProductObj = Product(id: cartProduct.id!, name: cartProduct.name!, description: cartProduct.description,
+                                       price: Price(value: cartProduct.price, currency: "€"),
+                                       info: Info(material: "Material", numberOfSeats: 2, color: "Red", dimensions: "", weight: "", bulbType: ""),
+                                       type: cartProduct.type!, imageUrl: cartProduct.imgUrl!,
+                                       isFavorite: true, rating: 4, availability: "yes", userReviews: [])
+        
+        // Go to ProductPageViewController
+        performSegue(withIdentifier: productPageViewControllerSegue, sender: self)
+    }
+    
+    
 
 }

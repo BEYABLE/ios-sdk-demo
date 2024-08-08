@@ -52,7 +52,7 @@ struct ProductDetailView: View {
                             .font(.title2)
                             .fontWeight(.semibold)
                             .foregroundColor(.red)
-                        BYInPagePlaceHolder(placeHolderId: "placholer01")
+                        BYInPagePlaceHolder(placeHolderId: "placholer01"){}
                         Text(product.description!)
                             .font(.body)
                     }
@@ -103,6 +103,7 @@ struct ProductDetailView: View {
         )
         
         AppDelegate.instance.beyableClient.sendPageview(
+            url: "/product_detail_\(product.id)",
             page: EPageUrlTypeBeyable.PRODUCT,
             currentView: UIApplication.shared.windows.first?.rootViewController?.view ?? UIView(),
             attributes: productBY,
