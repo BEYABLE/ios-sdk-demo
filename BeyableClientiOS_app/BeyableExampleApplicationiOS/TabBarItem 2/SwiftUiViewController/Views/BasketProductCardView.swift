@@ -46,7 +46,7 @@ struct BasketProductCardView: View, OnCtaDelegate {
                     Text(verbatim: viewModel.name)
                         .font(.body)
                         .accessibilityIdentifier(AccessibilityIdentifier.nameLabel.rawValue)
-                    BYInCollectionPlaceHolder(
+                    BYInCollectionPlaceHolder(                        
                         placeHolderId: "cart_product_title",
                         elementId: viewModel.name,
                         delegate: self)

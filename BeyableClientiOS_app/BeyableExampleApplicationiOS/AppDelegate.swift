@@ -27,7 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             env = EnvironmentBeyable.preprod.rawValue
         }
 
-        beyableClient = BeyableSDK(tokenClient: token!, environment: SettingsHelper.getEnvByString(envString: env ?? EnvironmentBeyable.production.rawValue), loggingEnabledUser: true)
+        beyableClient = BeyableSDK(tokenClient: token!, tenant: "Aulnay-sous-Bois", 
+                                   baseUrl: EnvironmentBeyable.preprod.rawValue,
+                                   loggingEnabledUser: true)
     }
     
     // MARK: UISceneSession Lifecycle

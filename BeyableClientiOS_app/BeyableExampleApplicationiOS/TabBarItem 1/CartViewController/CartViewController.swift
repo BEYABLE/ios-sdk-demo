@@ -79,6 +79,7 @@ class CartViewController: UIViewController, OnSendPageView {
 
         let byCartInfos : BYCartInfos = self.getCartByInfos(shoppingCartProducts: shoppingCartProducts)
         AppDelegate.instance.beyableClient.sendPageview(
+            url: "/cart",
             page: EPageUrlTypeBeyable.CART,
             currentView: self.view,
             attributes: BYCartAttributes(tags: ["totalPriceAmount:\(totalPriceAmount)"]),

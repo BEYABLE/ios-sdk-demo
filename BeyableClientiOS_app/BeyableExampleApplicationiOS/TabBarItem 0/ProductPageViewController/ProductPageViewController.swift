@@ -146,6 +146,7 @@ extension ProductPageViewController {
         )
         
         AppDelegate.instance.beyableClient.sendPageview(
+            url: "/prodcut_detail_uikit_\(product.id)",
             page: EPageUrlTypeBeyable.PRODUCT,
             currentView: self.view,
             attributes: productBY,

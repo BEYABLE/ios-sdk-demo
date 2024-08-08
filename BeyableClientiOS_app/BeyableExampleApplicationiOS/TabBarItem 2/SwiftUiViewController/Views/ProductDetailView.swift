@@ -103,6 +103,7 @@ struct ProductDetailView: View {
         )
         
         AppDelegate.instance.beyableClient.sendPageview(
+            url: "/product_detail_\(product.id)",
             page: EPageUrlTypeBeyable.PRODUCT,
             currentView: UIApplication.shared.windows.first?.rootViewController?.view ?? UIView(),
             attributes: productBY,

@@ -92,14 +92,14 @@ extension CartViewController: UITableViewDelegate, UITableViewDataSource, OnCtaD
         // Product to load in the current cell
         let product = shoppingCartProducts[index]
         // Send the cell to the BeyableSDK
-        AppDelegate.instance.beyableClient.sendCellBinded(cell: cell, elemementId: product.name!, callback: self)
+        AppDelegate.instance.beyableClient.sendCellBinded(url: "/cart", cell: cell, elementId: product.name!, callback: self)
     }
     
     func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         // Réinitialisez l'état de la cellule lorsqu'elle est retirée de l'écran
         let index = indexPath.row
         let product = shoppingCartProducts[index]
-        AppDelegate.instance.beyableClient.sendCellUnbinded(cell: cell, elemementId: product.name!)
+        AppDelegate.instance.beyableClient.sendCellUnbinded(url: "/cart", cell: cell, elementId: product.name!)
     }
     
     func onBYClick(cellId: String, value: String) {
